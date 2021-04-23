@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.3</h1>
+	 <h2>v0.0.4</h1>
 	</header>
   </head>
 <body>
@@ -297,7 +297,7 @@
 	 <th>-</th>
 	</tr>
    </table>
-  </div><p>Rulestring:</p>
+  </div>
 
 <form>
 <input type="button" value="Print rulestring" name="commit" onclick="printRulestring()"> 
@@ -409,489 +409,365 @@ var S7c = document.getElementById('box-S7c');
 var S7e = document.getElementById('box-S7e');
 var S8 = document.getElementById('box-S8');
 
-
-document.getElementById("rulestring-output").value='B';
-var priortext = document.getElementById("rulestring-output").value
-
+var buildrulestring = 'B';
 
   if (B0.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('0');
+buildrulestring = buildrulestring.concat('0');
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B1c.checked == true || B1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('1');
+buildrulestring = buildrulestring.concat('1');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B1c.checked == true && B1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B1c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
+buildrulestring = buildrulestring.concat('c');
 } if (B1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
+buildrulestring = buildrulestring.concat('e');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B2c.checked == true || B2e.checked == true || B2k.checked == true || B2a.checked == true || B2i.checked == true || B2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('2');
+buildrulestring = buildrulestring.concat('2');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B2c.checked == true && B2e.checked == true && B2k.checked == true && B2a.checked == true && B2i.checked == true && B2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B2a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (B2c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (B2e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (B2i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (B2k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (B2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B3c.checked == true || B3e.checked == true || B3k.checked == true || B3a.checked == true || B3i.checked == true || B3n.checked == true || B3y.checked == true || B3q.checked == true || B3j.checked == true || B3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('3');
+buildrulestring = buildrulestring.concat('3');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B3c.checked == true && B3e.checked == true && B3k.checked == true && B3a.checked == true && B3i.checked == true && B3n.checked == true && B3y.checked == true && B3q.checked == true && B3j.checked == true && B3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B3a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (B3c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (B3e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (B3i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (B3j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (B3k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (B3n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (B3q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (B3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (B3y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B4c.checked == true || B4e.checked == true || B4k.checked == true || B4a.checked == true || B4i.checked == true || B4n.checked == true || B4y.checked == true || B4q.checked == true || B4j.checked == true || B4r.checked == true || B4t.checked == true || B4w.checked == true || B4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('4');
+buildrulestring = buildrulestring.concat('4');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B4c.checked == true && B4e.checked == true && B4k.checked == true && B4a.checked == true && B4i.checked == true && B4n.checked == true && B4y.checked == true && B4q.checked == true && B4j.checked == true && B4r.checked == true && B4t.checked == true && B4w.checked == true && B4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B4a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (B4c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (B4e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (B4i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (B4j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (B4k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (B4n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (B4q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (B4r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (B4t.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('t');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('t');
 } if (B4w.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('w');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('w');
 } if (B4y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 } if (B4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('z');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('z');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B5c.checked == true || B5e.checked == true || B5k.checked == true || B5a.checked == true || B5i.checked == true || B5n.checked == true || B5y.checked == true || B5q.checked == true || B5j.checked == true || B5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('5');
+buildrulestring = buildrulestring.concat('5');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B5c.checked == true && B5e.checked == true && B5k.checked == true && B5a.checked == true && B5i.checked == true && B5n.checked == true && B5y.checked == true && B5q.checked == true && B5j.checked == true && B5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B5a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (B5c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (B5e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (B5i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (B5j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (B5k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (B5n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (B5q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (B5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (B5y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B6c.checked == true || B6e.checked == true || B6k.checked == true || B6a.checked == true || B6i.checked == true || B6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('6');
+buildrulestring = buildrulestring.concat('6');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B6c.checked == true && B6e.checked == true && B6k.checked == true && B6a.checked == true && B6i.checked == true && B6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B6a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (B6c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (B6e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (B6i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (B6k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (B6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B7c.checked == true || B7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('7');
+buildrulestring = buildrulestring.concat('7');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (B7c.checked == true && B7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (B7c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
+buildrulestring = buildrulestring.concat('c');
 } if (B7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
+buildrulestring = buildrulestring.concat('e');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (B8.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('8');
+buildrulestring = buildrulestring.concat('8');
 }
-var priortext = document.getElementById("rulestring-output").value
-document.getElementById("rulestring-output").value=priortext.concat('/S');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('/S');
 
 
   if (S0.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('0');
+buildrulestring = buildrulestring.concat('0');
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S1c.checked == true || S1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('1');
+buildrulestring = buildrulestring.concat('1');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S1c.checked == true && S1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S1c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
+buildrulestring = buildrulestring.concat('c');
 } if (S1e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
+buildrulestring = buildrulestring.concat('e');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S2c.checked == true || S2e.checked == true || S2k.checked == true || S2a.checked == true || S2i.checked == true || S2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('2');
+buildrulestring = buildrulestring.concat('2');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S2c.checked == true && S2e.checked == true && S2k.checked == true && S2a.checked == true && S2i.checked == true && S2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S2a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (S2c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (S2e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (S2i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (S2k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (S2n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S3c.checked == true || S3e.checked == true || S3k.checked == true || S3a.checked == true || S3i.checked == true || S3n.checked == true || S3y.checked == true || S3q.checked == true || S3j.checked == true || S3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('3');
+buildrulestring = buildrulestring.concat('3');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S3c.checked == true && S3e.checked == true && S3k.checked == true && S3a.checked == true && S3i.checked == true && S3n.checked == true && S3y.checked == true && S3q.checked == true && S3j.checked == true && S3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S3a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (S3c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (S3e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (S3i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (S3j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (S3k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (S3n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (S3q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (S3r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (S3y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S4c.checked == true || S4e.checked == true || S4k.checked == true || S4a.checked == true || S4i.checked == true || S4n.checked == true || S4y.checked == true || S4q.checked == true || S4j.checked == true || S4r.checked == true || S4t.checked == true || S4w.checked == true || S4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('4');
+buildrulestring = buildrulestring.concat('4');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S4c.checked == true && S4e.checked == true && S4k.checked == true && S4a.checked == true && S4i.checked == true && S4n.checked == true && S4y.checked == true && S4q.checked == true && S4j.checked == true && S4r.checked == true && S4t.checked == true && S4w.checked == true && S4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S4a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (S4c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (S4e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (S4i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (S4j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (S4k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (S4n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (S4q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (S4r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (S4t.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('t');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('t');
 } if (S4w.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('w');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('w');
 } if (S4y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 } if (S4z.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('z');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('z');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S5c.checked == true || S5e.checked == true || S5k.checked == true || S5a.checked == true || S5i.checked == true || S5n.checked == true || S5y.checked == true || S5q.checked == true || S5j.checked == true || S5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('5');
+buildrulestring = buildrulestring.concat('5');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S5c.checked == true && S5e.checked == true && S5k.checked == true && S5a.checked == true && S5i.checked == true && S5n.checked == true && S5y.checked == true && S5q.checked == true && S5j.checked == true && S5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S5a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (S5c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (S5e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (S5i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (S5j.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('j');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('j');
 } if (S5k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (S5n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 } if (S5q.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('q');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('q');
 } if (S5r.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('r');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('r');
 } if (S5y.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('y');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('y');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S6c.checked == true || S6e.checked == true || S6k.checked == true || S6a.checked == true || S6i.checked == true || S6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('6');
+buildrulestring = buildrulestring.concat('6');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S6c.checked == true && S6e.checked == true && S6k.checked == true && S6a.checked == true && S6i.checked == true && S6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S6a.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('a');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('a');
 } if (S6c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('c');
 } if (S6e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('e');
 } if (S6i.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('i');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('i');
 } if (S6k.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('k');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('k');
 } if (S6n.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('n');
-var priortext = document.getElementById("rulestring-output").value
+buildrulestring = buildrulestring.concat('n');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S7c.checked == true || S7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('7');
+buildrulestring = buildrulestring.concat('7');
 }
-var priortext = document.getElementById("rulestring-output").value
   if (S7c.checked == true && S7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('');
+buildrulestring = buildrulestring.concat('');
 } else {
   if (S7c.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('c');
+buildrulestring = buildrulestring.concat('c');
 } if (S7e.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('e');
+buildrulestring = buildrulestring.concat('e');
 }
 }
-var priortext = document.getElementById("rulestring-output").value
 
 
   if (S8.checked == true){
-document.getElementById("rulestring-output").value=priortext.concat('8');
+buildrulestring = buildrulestring.concat('8');
 }
-var priortext = document.getElementById("rulestring-output").value
+
+document.getElementById("rulestring-output").value=buildrulestring;
 }
 </script>
   </body>
