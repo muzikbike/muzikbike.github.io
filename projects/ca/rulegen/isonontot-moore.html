@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.11</h1>
+	 <h2>v0.0.12</h1>
 	</header>
   </head>
 <body>
@@ -320,16 +320,6 @@ var s4total = 0;
 var s5total = 0;
 var s6total = 0;
         function counttransitions(){
-		var b2exceeds = " (max 3)";
-		var b3exceeds = " (max 5)";
-		var b4exceeds = " (max 6)";
-		var b5exceeds = " (max 5)";
-		var b6exceeds = " (max 3)";
-		var s2exceeds = " (max 3)";
-		var s3exceeds = " (max 5)";
-		var s4exceeds = " (max 6)";
-		var s5exceeds = " (max 5)";
-		var s6exceeds = " (max 3)";
             let b2count=0, b2list=document.getElementsByClassName("B2-boxes");
             let b3count=0, b3list=document.getElementsByClassName("B3-boxes");
             let b4count=0, b4list=document.getElementsByClassName("B4-boxes");
@@ -390,36 +380,6 @@ var s6total = 0;
                     s6count++;
                 }
             }
-			if (b2count > 3){
-			b2exceeds = " (! Exceeds max of 3)"
-			}
-			if (b3count > 5){
-			b3exceeds = " (! Exceeds max of 5)"
-			}
-			if (b4count > 6){
-			b4exceeds = " (! Exceeds max of 6)"
-			}
-			if (b5count > 5){
-			b5exceeds = " (! Exceeds max of 5)"
-			}
-			if (b6count > 3){
-			b6exceeds = " (! Exceeds max of 3)"
-			}
-			if (s2count > 3){
-			s2exceeds = " (! Exceeds max of 3)"
-			}
-			if (s3count > 5){
-			s3exceeds = " (! Exceeds max of 5)"
-			}
-			if (s4count > 6){
-			s4exceeds = " (! Exceeds max of 6)"
-			}
-			if (s5count > 5){
-			s5exceeds = " (! Exceeds max of 5)"
-			}
-			if (s6count > 3){
-			s6exceeds = " (! Exceeds max of 3)"
-			}
 			b2total = b2count;
 			b3total = b3count;
 			b4total = b4count;
