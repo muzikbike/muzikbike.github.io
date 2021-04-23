@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.5</h1>
+	 <h2>v0.0.6</h1>
 	</header>
   </head>
 <body>
@@ -29,8 +29,8 @@
     <tr>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/ae/Neighborhood_0.png alt="0"></img><br>
-	  <label for="box-B0">B</label><input type="checkbox" id="box-B0">
-	  <label for="box-S0">S</label><input type="checkbox" id="box-S0"></th>
+	  <label for="box-B0">B</label><input type="checkbox" id="box-B0" class="B0-boxes" onclick="counttransitions()">
+	  <label for="box-S0">S</label><input type="checkbox" id="box-S0" class="S0-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -39,59 +39,59 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/2c/Neighborhood_8.png alt="8"></img><br>
-	  <label for="box-B8">B</label><input type="checkbox" id="box-B8">
-	  <label for="box-S8">S</label><input type="checkbox" id="box-S8"></th>
+	  <label for="box-B8">B</label><input type="checkbox" id="box-B8" class="B8-boxes" onclick="counttransitions()">
+	  <label for="box-S8">S</label><input type="checkbox" id="box-S8" class="S8-boxes" onclick="counttransitions()"></th>
 	</tr>
     <tr>
 	 <th>c</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0f/Neighborhood_1c.png alt="1c"></img><br>
-	  <label for="box-B1c">B</label><input type="checkbox" id="box-B1c">
-	  <label for="box-S1c">S</label><input type="checkbox" id="box-S1c"></th>
+	  <label for="box-B1c">B</label><input type="checkbox" id="box-B1c" class="B1-boxes" onclick="counttransitions()">
+	  <label for="box-S1c">S</label><input type="checkbox" id="box-S1c" class="S1-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/1/16/Neighborhood_2c.png alt="2c"></img><br>
-	  <label for="box-B2c">B</label><input type="checkbox" id="box-B2c">
-	  <label for="box-S2c">S</label><input type="checkbox" id="box-S2c"></th>
+	  <label for="box-B2c">B</label><input type="checkbox" id="box-B2c" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2c">S</label><input type="checkbox" id="box-S2c" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e2/Neighborhood_3c.png alt="3c"></img><br>
-	  <label for="box-B3c">B</label><input type="checkbox" id="box-B3c">
-	  <label for="box-S3c">S</label><input type="checkbox" id="box-S3c"></th>
+	  <label for="box-B3c">B</label><input type="checkbox" id="box-B3c" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3c">S</label><input type="checkbox" id="box-S3c" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/fa/Neighborhood_4c.png alt="4c"></img><br>
-	  <label for="box-B4c">B</label><input type="checkbox" id="box-B4c">
-	  <label for="box-S4c">S</label><input type="checkbox" id="box-S4c"></th>
+	  <label for="box-B4c">B</label><input type="checkbox" id="box-B4c" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4c">S</label><input type="checkbox" id="box-S4c" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/a4/Neighborhood_5c.png alt="5c"></img><br>
-	  <label for="box-B5c">B</label><input type="checkbox" id="box-B5c">
-	  <label for="box-S5c">S</label><input type="checkbox" id="box-S5c"></th>
+	  <label for="box-B5c">B</label><input type="checkbox" id="box-B5c" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5c">S</label><input type="checkbox" id="box-S5c" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/1/16/Neighborhood_6c.png alt="6c"></img><br>
-	  <label for="box-B6c">B</label><input type="checkbox" id="box-B6c">
-	  <label for="box-S6c">S</label><input type="checkbox" id="box-S6c"></th>
+	  <label for="box-B6c">B</label><input type="checkbox" id="box-B6c" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6c">S</label><input type="checkbox" id="box-S6c" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/26/Neighborhood_7c.png alt="7c"></img><br>
-	  <label for="box-B7c">B</label><input type="checkbox" id="box-B7c">
-	  <label for="box-S7c">S</label><input type="checkbox" id="box-S7c"></th>
+	  <label for="box-B7c">B</label><input type="checkbox" id="box-B7c" class="B7-boxes" onclick="counttransitions()">
+	  <label for="box-S7c">S</label><input type="checkbox" id="box-S7c" class="S7-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	</tr>
     <tr>
 	 <th>e</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e8/Neighborhood_1e.png alt="1e"></img><br>
-	  <label for="box-B1e">B</label><input type="checkbox" id="box-B1e">
-	  <label for="box-S1e">S</label><input type="checkbox" id="box-S1e"></th>
+	  <label for="box-B1e">B</label><input type="checkbox" id="box-B1e" class="B1-boxes" onclick="counttransitions()">
+	  <label for="box-S1e">S</label><input type="checkbox" id="box-S1e" class="S1-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/88/Neighborhood_2e.png alt="2e"></img><br>
-	  <label for="box-B2e">B</label><input type="checkbox" id="box-B2e">
-	  <label for="box-S2e">S</label><input type="checkbox" id="box-S2e"></th>
+	  <label for="box-B2e">B</label><input type="checkbox" id="box-B2e" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2e">S</label><input type="checkbox" id="box-S2e" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b9/Neighborhood_3e.png alt="3e"></img><br>
-	  <label for="box-B3e">B</label><input type="checkbox" id="box-B3e">
-	  <label for="box-S3e">S</label><input type="checkbox" id="box-S3e"></th>
+	  <label for="box-B3e">B</label><input type="checkbox" id="box-B3e" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3e">S</label><input type="checkbox" id="box-S3e" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/27/Neighborhood_4e.png alt="4e"></img><br>
-	  <label for="box-B4e">B</label><input type="checkbox" id="box-B4e">
-	  <label for="box-S4e">S</label><input type="checkbox" id="box-S4e"></th>
+	  <label for="box-B4e">B</label><input type="checkbox" id="box-B4e" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4e">S</label><input type="checkbox" id="box-S4e" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/be/Neighborhood_5e.png alt="5e"></img><br>
-	  <label for="box-B5e">B</label><input type="checkbox" id="box-B5e">
-	  <label for="box-S5e">S</label><input type="checkbox" id="box-S5e"></th>
+	  <label for="box-B5e">B</label><input type="checkbox" id="box-B5e" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5e">S</label><input type="checkbox" id="box-S5e" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/bd/Neighborhood_6e.png alt="6e"></img><br>
-	  <label for="box-B6e">B</label><input type="checkbox" id="box-B6e">
-	  <label for="box-S6e">S</label><input type="checkbox" id="box-S6e"></th>
+	  <label for="box-B6e">B</label><input type="checkbox" id="box-B6e" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6e">S</label><input type="checkbox" id="box-S6e" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/2b/Neighborhood_7e.png alt="7e"></img><br>
-	  <label for="box-B7e">B</label><input type="checkbox" id="box-B7e">
-	  <label for="box-S7e">S</label><input type="checkbox" id="box-S7e"></th>
+	  <label for="box-B7e">B</label><input type="checkbox" id="box-B7e" class="B7-boxes" onclick="counttransitions()">
+	  <label for="box-S7e">S</label><input type="checkbox" id="box-S7e" class="S7-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	</tr>
     <tr>
@@ -99,20 +99,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/d2/Neighborhood_2k.png alt="2k"></img><br>
-	  <label for="box-B2k">B</label><input type="checkbox" id="box-B2k">
-	  <label for="box-S2k">S</label><input type="checkbox" id="box-S2k"></th>
+	  <label for="box-B2k">B</label><input type="checkbox" id="box-B2k" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2k">S</label><input type="checkbox" id="box-S2k" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e7/Neighborhood_3k.png alt="3k"></img><br>
-	  <label for="box-B3k">B</label><input type="checkbox" id="box-B3k">
-	  <label for="box-S3k">S</label><input type="checkbox" id="box-S3k"></th>
+	  <label for="box-B3k">B</label><input type="checkbox" id="box-B3k" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3k">S</label><input type="checkbox" id="box-S3k" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/3/32/Neighborhood_4k.png alt="4k"></img><br>
-	  <label for="box-B4k">B</label><input type="checkbox" id="box-B4k">
-	  <label for="box-S4k">S</label><input type="checkbox" id="box-S4k"></th>
+	  <label for="box-B4k">B</label><input type="checkbox" id="box-B4k" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4k">S</label><input type="checkbox" id="box-S4k" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/63/Neighborhood_5k.png alt="5k"></img><br>
-	  <label for="box-B5k">B</label><input type="checkbox" id="box-B5k">
-	  <label for="box-S5k">S</label><input type="checkbox" id="box-S5k"></th>
+	  <label for="box-B5k">B</label><input type="checkbox" id="box-B5k" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5k">S</label><input type="checkbox" id="box-S5k" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b6/Neighborhood_6k.png alt="6k"></img><br>
-	  <label for="box-B6k">B</label><input type="checkbox" id="box-B6k">
-	  <label for="box-S6k">S</label><input type="checkbox" id="box-S6k"></th>
+	  <label for="box-B6k">B</label><input type="checkbox" id="box-B6k" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6k">S</label><input type="checkbox" id="box-S6k" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -121,20 +121,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/54/Neighborhood_2a.png alt="2a"></img><br>
-	  <label for="box-B2a">B</label><input type="checkbox" id="box-B2a">
-	  <label for="box-S2a">S</label><input type="checkbox" id="box-S2a"></th>
+	  <label for="box-B2a">B</label><input type="checkbox" id="box-B2a" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2a">S</label><input type="checkbox" id="box-S2a" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/8a/Neighborhood_3a.png alt="3a"></img><br>
-	  <label for="box-B3a">B</label><input type="checkbox" id="box-B3a">
-	  <label for="box-S3a">S</label><input type="checkbox" id="box-S3a"></th>
+	  <label for="box-B3a">B</label><input type="checkbox" id="box-B3a" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3a">S</label><input type="checkbox" id="box-S3a" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/f5/Neighborhood_4a.png alt="4a"></img><br>
-	  <label for="box-B4a">B</label><input type="checkbox" id="box-B4a">
-	  <label for="box-S4a">S</label><input type="checkbox" id="box-S4a"></th>
+	  <label for="box-B4a">B</label><input type="checkbox" id="box-B4a" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4a">S</label><input type="checkbox" id="box-S4a" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/69/Neighborhood_5a.png alt="5a"></img><br>
-	  <label for="box-B5a">B</label><input type="checkbox" id="box-B5a">
-	  <label for="box-S5a">S</label><input type="checkbox" id="box-S5a"></th>
+	  <label for="box-B5a">B</label><input type="checkbox" id="box-B5a" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5a">S</label><input type="checkbox" id="box-S5a" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b8/Neighborhood_6a.png alt="6a"></img><br>
-	  <label for="box-B6a">B</label><input type="checkbox" id="box-B6a">
-	  <label for="box-S6a">S</label><input type="checkbox" id="box-S6a"></th>
+	  <label for="box-B6a">B</label><input type="checkbox" id="box-B6a" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6a">S</label><input type="checkbox" id="box-S6a" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -143,20 +143,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/49/Neighborhood_2i.png alt="2i"></img><br>
-	  <label for="box-B2i">B</label><input type="checkbox" id="box-B2i">
-	  <label for="box-S2i">S</label><input type="checkbox" id="box-S2i"></th>
+	  <label for="box-B2i">B</label><input type="checkbox" id="box-B2i" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2i">S</label><input type="checkbox" id="box-S2i" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/fd/Neighborhood_3i.png alt="3i"></img><br>
-	  <label for="box-B3i">B</label><input type="checkbox" id="box-B3i">
-	  <label for="box-S3i">S</label><input type="checkbox" id="box-S3i"></th>
+	  <label for="box-B3i">B</label><input type="checkbox" id="box-B3i" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3i">S</label><input type="checkbox" id="box-S3i" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/ea/Neighborhood_4i.png alt="4i"></img><br>
-	  <label for="box-B4i">B</label><input type="checkbox" id="box-B4i">
-	  <label for="box-S4i">S</label><input type="checkbox" id="box-S4i"></th>
+	  <label for="box-B4i">B</label><input type="checkbox" id="box-B4i" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4i">S</label><input type="checkbox" id="box-S4i" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/d6/Neighborhood_5i.png alt="5i"></img><br>
-	  <label for="box-B5i">B</label><input type="checkbox" id="box-B5i">
-	  <label for="box-S5i">S</label><input type="checkbox" id="box-S5i"></th>
+	  <label for="box-B5i">B</label><input type="checkbox" id="box-B5i" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5i">S</label><input type="checkbox" id="box-S5i" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b7/Neighborhood_6i.png alt="6i"></img><br>
-	  <label for="box-B6i">B</label><input type="checkbox" id="box-B6i">
-	  <label for="box-S6i">S</label><input type="checkbox" id="box-S6i"></th>
+	  <label for="box-B6i">B</label><input type="checkbox" id="box-B6i" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6i">S</label><input type="checkbox" id="box-S6i" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -165,20 +165,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/c/c0/Neighborhood_2n.png alt="2n"></img><br>
-	  <label for="box-B2n">B</label><input type="checkbox" id="box-B2n">
-	  <label for="box-S2n">S</label><input type="checkbox" id="box-S2n"></th>
+	  <label for="box-B2n">B</label><input type="checkbox" id="box-B2n" class="B2-boxes" onclick="counttransitions()">
+	  <label for="box-S2n">S</label><input type="checkbox" id="box-S2n" class="S2-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/62/Neighborhood_3n.png alt="3n"></img><br>
-	  <label for="box-B3n">B</label><input type="checkbox" id="box-B3n">
-	  <label for="box-S3n">S</label><input type="checkbox" id="box-S3n"></th>
+	  <label for="box-B3n">B</label><input type="checkbox" id="box-B3n" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3n">S</label><input type="checkbox" id="box-S3n" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/af/Neighborhood_4n.png alt="4n"></img><br>
-	  <label for="box-B4n">B</label><input type="checkbox" id="box-B4n">
-	  <label for="box-S4n">S</label><input type="checkbox" id="box-S4n"></th>
+	  <label for="box-B4n">B</label><input type="checkbox" id="box-B4n" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4n">S</label><input type="checkbox" id="box-S4n" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/c/c6/Neighborhood_5n.png alt="5n"></img><br>
-	  <label for="box-B5n">B</label><input type="checkbox" id="box-B5n">
-	  <label for="box-S5n">S</label><input type="checkbox" id="box-S5n"></th>
+	  <label for="box-B5n">B</label><input type="checkbox" id="box-B5n" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5n">S</label><input type="checkbox" id="box-S5n" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/df/Neighborhood_6n.png alt="6n"></img><br>
-	  <label for="box-B6n">B</label><input type="checkbox" id="box-B6n">
-	  <label for="box-S6n">S</label><input type="checkbox" id="box-S6n"></th>
+	  <label for="box-B6n">B</label><input type="checkbox" id="box-B6n" class="B6-boxes" onclick="counttransitions()">
+	  <label for="box-S6n">S</label><input type="checkbox" id="box-S6n" class="S6-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -188,14 +188,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/89/Neighborhood_3y.png alt="3y"></img><br>
-	  <label for="box-B3y">B</label><input type="checkbox" id="box-B3y">
-	  <label for="box-S3y">S</label><input type="checkbox" id="box-S3y"></th>
+	  <label for="box-B3y">B</label><input type="checkbox" id="box-B3y" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3y">S</label><input type="checkbox" id="box-S3y" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/ba/Neighborhood_4y.png alt="4y"></img><br>
-	  <label for="box-B4y">B</label><input type="checkbox" id="box-B4y">
-	  <label for="box-S4y">S</label><input type="checkbox" id="box-S4y"></th>
+	  <label for="box-B4y">B</label><input type="checkbox" id="box-B4y" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4y">S</label><input type="checkbox" id="box-S4y" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0f/Neighborhood_5y.png alt="5y"></img><br>
-	  <label for="box-B5y">B</label><input type="checkbox" id="box-B5y">
-	  <label for="box-S5y">S</label><input type="checkbox" id="box-S5y"></th>
+	  <label for="box-B5y">B</label><input type="checkbox" id="box-B5y" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5y">S</label><input type="checkbox" id="box-S5y" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -206,14 +206,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/66/Neighborhood_3q.png alt="3q"></img><br>
-	  <label for="box-B3q">B</label><input type="checkbox" id="box-B3q">
-	  <label for="box-S3q">S</label><input type="checkbox" id="box-S3q"></th>
+	  <label for="box-B3q">B</label><input type="checkbox" id="box-B3q" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3q">S</label><input type="checkbox" id="box-S3q" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/9/9e/Neighborhood_4q.png alt="4q"></img><br>
-	  <label for="box-B4q">B</label><input type="checkbox" id="box-B4q">
-	  <label for="box-S4q">S</label><input type="checkbox" id="box-S4q"></th>
+	  <label for="box-B4q">B</label><input type="checkbox" id="box-B4q" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4q">S</label><input type="checkbox" id="box-S4q" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/ea/Neighborhood_5q.png alt="5q"></img><br>
-	  <label for="box-B5q">B</label><input type="checkbox" id="box-B5q">
-	  <label for="box-S5q">S</label><input type="checkbox" id="box-S5q"></th>
+	  <label for="box-B5q">B</label><input type="checkbox" id="box-B5q" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5q">S</label><input type="checkbox" id="box-S5q" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -224,14 +224,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/ab/Neighborhood_3j.png alt="3j"></img><br>
-	  <label for="box-B3j">B</label><input type="checkbox" id="box-B3j">
-	  <label for="box-S3j">S</label><input type="checkbox" id="box-S3j"></th>
+	  <label for="box-B3j">B</label><input type="checkbox" id="box-B3j" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3j">S</label><input type="checkbox" id="box-S3j" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/22/Neighborhood_4j.png alt="4j"></img><br>
-	  <label for="box-B4j">B</label><input type="checkbox" id="box-B4j">
-	  <label for="box-S4j">S</label><input type="checkbox" id="box-S4j"></th>
+	  <label for="box-B4j">B</label><input type="checkbox" id="box-B4j" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4j">S</label><input type="checkbox" id="box-S4j" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/57/Neighborhood_5j.png alt="5j"></img><br>
-	  <label for="box-B5j">B</label><input type="checkbox" id="box-B5j">
-	  <label for="box-S5j">S</label><input type="checkbox" id="box-S5j"></th>
+	  <label for="box-B5j">B</label><input type="checkbox" id="box-B5j" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5j">S</label><input type="checkbox" id="box-S5j" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -242,14 +242,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/04/Neighborhood_3r.png alt="3r"></img><br>
-	  <label for="box-B3r">B</label><input type="checkbox" id="box-B3r">
-	  <label for="box-S3r">S</label><input type="checkbox" id="box-S3r"></th>
+	  <label for="box-B3r">B</label><input type="checkbox" id="box-B3r" class="B3-boxes" onclick="counttransitions()">
+	  <label for="box-S3r">S</label><input type="checkbox" id="box-S3r" class="S3-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/5b/Neighborhood_4r.png alt="4r"></img><br>
-	  <label for="box-B4r">B</label><input type="checkbox" id="box-B4r">
-	  <label for="box-S4r">S</label><input type="checkbox" id="box-S4r"></th>
+	  <label for="box-B4r">B</label><input type="checkbox" id="box-B4r" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4r">S</label><input type="checkbox" id="box-S4r" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/47/Neighborhood_5r.png alt="5r"></img><br>
-	  <label for="box-B5r">B</label><input type="checkbox" id="box-B5r">
-	  <label for="box-S5r">S</label><input type="checkbox" id="box-S5r"></th>
+	  <label for="box-B5r">B</label><input type="checkbox" id="box-B5r" class="B5-boxes" onclick="counttransitions()">
+	  <label for="box-S5r">S</label><input type="checkbox" id="box-S5r" class="S5-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -261,8 +261,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/4e/Neighborhood_4t.png alt="4t"></img><br>
-	  <label for="box-B4t">B</label><input type="checkbox" id="box-B4t">
-	  <label for="box-S4t">S</label><input type="checkbox" id="box-S4t"></th>
+	  <label for="box-B4t">B</label><input type="checkbox" id="box-B4t" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4t">S</label><input type="checkbox" id="box-S4t" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -275,8 +275,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0e/Neighborhood_4w.png alt="4w"></img><br>
-	  <label for="box-B4w">B</label><input type="checkbox" id="box-B4w">
-	  <label for="box-S4w">S</label><input type="checkbox" id="box-S4w"></th>
+	  <label for="box-B4w">B</label><input type="checkbox" id="box-B4w" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4w">S</label><input type="checkbox" id="box-S4w" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -289,8 +289,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e8/Neighborhood_4z.png alt="4z"></img><br>
-	  <label for="box-B4z">B</label><input type="checkbox" id="box-B4z">
-	  <label for="box-S4z">S</label><input type="checkbox" id="box-S4z"></th>
+	  <label for="box-B4z">B</label><input type="checkbox" id="box-B4z" class="B4-boxes" onclick="counttransitions()">
+	  <label for="box-S4z">S</label><input type="checkbox" id="box-S4z" class="S4-boxes" onclick="counttransitions()"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -304,9 +304,157 @@
 <input type="text" id="rulestring-output" size="20">
 </form>
 
-<a href="https://catagolue.hatsya.com/census/" id="ctglrulestring"></div>
+<a href="https://catagolue.hatsya.com/census/" id="ctglrulestring"></a>
+
+<p>Debug info:</p>
+    <div id="b0transitions">B0 transitions: 0 (1)</div>
+    <div id="b1transitions">B1 transitions: 0 (1)</div>
+    <div id="b2transitions">B2 transitions: 0 (3)</div>
+    <div id="b3transitions">B3 transitions: 0 (5)</div>
+    <div id="b4transitions">B4 transitions: 0 (6)</div>
+    <div id="b5transitions">B5 transitions: 0 (5)</div>
+    <div id="b6transitions">B6 transitions: 0 (3)</div>
+    <div id="b7transitions">B7 transitions: 0 (1)</div>
+    <div id="b8transitions">B8 transitions: 0 (1)</div>
+    <div id="s0transitions">S0 transitions: 0 (1)</div>
+    <div id="s1transitions">S1 transitions: 0 (1)</div>
+    <div id="s2transitions">S2 transitions: 0 (3)</div>
+    <div id="s3transitions">S3 transitions: 0 (5)</div>
+    <div id="s4transitions">S4 transitions: 0 (6)</div>
+    <div id="s5transitions">S5 transitions: 0 (5)</div>
+    <div id="s6transitions">S6 transitions: 0 (3)</div>
+    <div id="s7transitions">S7 transitions: 0 (1)</div>
+    <div id="s8transitions">S8 transitions: 0 (1)</div>
 
 <script>
+        function counttransitions(){
+            let b0count=0, b0list=document.getElementsByClassName("B0-boxes");
+            let b1count=0, b1list=document.getElementsByClassName("B1-boxes");
+            let b2count=0, b2list=document.getElementsByClassName("B2-boxes");
+            let b3count=0, b3list=document.getElementsByClassName("B3-boxes");
+            let b4count=0, b4list=document.getElementsByClassName("B4-boxes");
+            let b5count=0, b5list=document.getElementsByClassName("B5-boxes");
+            let b6count=0, b6list=document.getElementsByClassName("B6-boxes");
+            let b7count=0, b7list=document.getElementsByClassName("B7-boxes");
+            let b8count=0, b8list=document.getElementsByClassName("B8-boxes");
+            let s0count=0, s0list=document.getElementsByClassName("S0-boxes");
+            let s1count=0, s1list=document.getElementsByClassName("S1-boxes");
+            let s2count=0, s2list=document.getElementsByClassName("S2-boxes");
+            let s3count=0, s3list=document.getElementsByClassName("S3-boxes");
+            let s4count=0, s4list=document.getElementsByClassName("S4-boxes");
+            let s5count=0, s5list=document.getElementsByClassName("S5-boxes");
+            let s6count=0, s6list=document.getElementsByClassName("S6-boxes");
+            let s7count=0, s7list=document.getElementsByClassName("S7-boxes");
+            let s8count=0, s8list=document.getElementsByClassName("S8-boxes");
+            for(n in b0list){
+                if(b0list[n].checked){
+                    b0count++;
+                }
+            }
+            for(n in b1list){
+                if(b1list[n].checked){
+                    b1count++;
+                }
+            }
+            for(n in b2list){
+                if(b2list[n].checked){
+                    b2count++;
+                }
+            }
+            for(n in b3list){
+                if(b3list[n].checked){
+                    b3count++;
+                }
+            }
+            for(n in b4list){
+                if(b4list[n].checked){
+                    b4count++;
+                }
+            }
+            for(n in b5list){
+                if(b5list[n].checked){
+                    b5count++;
+                }
+            }
+            for(n in b6list){
+                if(b6list[n].checked){
+                    b6count++;
+                }
+            }
+            for(n in b7list){
+                if(b7list[n].checked){
+                    b7count++;
+                }
+            }
+            for(n in b8list){
+                if(b8list[n].checked){
+                    b8count++;
+                }
+            }
+            for(n in s0list){
+                if(s0list[n].checked){
+                    s0count++;
+                }
+            }
+            for(n in s1list){
+                if(s1list[n].checked){
+                    s1count++;
+                }
+            }
+            for(n in s2list){
+                if(s2list[n].checked){
+                    s2count++;
+                }
+            }
+            for(n in s3list){
+                if(s3list[n].checked){
+                    s3count++;
+                }
+            }
+            for(n in s4list){
+                if(s4list[n].checked){
+                    s4count++;
+                }
+            }
+            for(n in s5list){
+                if(s5list[n].checked){
+                    s5count++;
+                }
+            }
+            for(n in s6list){
+                if(s6list[n].checked){
+                    s6count++;
+                }
+            }
+            for(n in s7list){
+                if(s7list[n].checked){
+                    s7count++;
+                }
+            }
+            for(n in s8list){
+                if(s8list[n].checked){
+                    s8count++;
+                }
+            }
+            document.getElementById("b0transitions").innerHTML="B0 transitions: "+b0count+" (1)";
+            document.getElementById("b1transitions").innerHTML="B1 transitions: "+b1count+" (1)";
+            document.getElementById("b2transitions").innerHTML="B2 transitions: "+b2count+" (3)";
+            document.getElementById("b3transitions").innerHTML="B3 transitions: "+b3count+" (5)";
+            document.getElementById("b4transitions").innerHTML="B4 transitions: "+b4count+" (6)";
+            document.getElementById("b5transitions").innerHTML="B5 transitions: "+b5count+" (5)";
+            document.getElementById("b6transitions").innerHTML="B6 transitions: "+b6count+" (3)";
+            document.getElementById("b7transitions").innerHTML="B7 transitions: "+b7count+" (1)";
+            document.getElementById("b8transitions").innerHTML="B8 transitions: "+b8count+" (1)";
+            document.getElementById("s0transitions").innerHTML="S0 transitions: "+s0count+" (1)";
+            document.getElementById("s1transitions").innerHTML="S1 transitions: "+s1count+" (1)";
+            document.getElementById("s2transitions").innerHTML="S2 transitions: "+s2count+" (3)";
+            document.getElementById("s3transitions").innerHTML="S3 transitions: "+s3count+" (5)";
+            document.getElementById("s4transitions").innerHTML="S4 transitions: "+s4count+" (6)";
+            document.getElementById("s5transitions").innerHTML="S5 transitions: "+s5count+" (5)";
+            document.getElementById("s6transitions").innerHTML="S6 transitions: "+s6count+" (3)";
+            document.getElementById("s7transitions").innerHTML="S7 transitions: "+s7count+" (1)";
+            document.getElementById("s8transitions").innerHTML="S8 transitions: "+s8count+" (1)";
+        }
 function printRulestring(){
 var B0 = document.getElementById('box-B0');
 var B1c = document.getElementById('box-B1c');
