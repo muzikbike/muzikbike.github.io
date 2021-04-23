@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.4</h1>
+	 <h2>v0.0.5</h1>
 	</header>
   </head>
 <body>
@@ -303,6 +303,8 @@
 <input type="button" value="Print rulestring" name="commit" onclick="printRulestring()"> 
 <input type="text" id="rulestring-output" size="20">
 </form>
+
+<a href="https://catagolue.hatsya.com/census/" id="ctglrulestring"></div>
 
 <script>
 function printRulestring(){
@@ -768,6 +770,12 @@ buildrulestring = buildrulestring.concat('8');
 }
 
 document.getElementById("rulestring-output").value=buildrulestring;
+
+var ctglify = buildrulestring.replace("B", "b");
+var ctglify = ctglify.replace("/S", "s");
+document.getElementById('ctglrulestring').href="https://catagolue.hatsya.com/census/"+ctglify+"/";
+document.getElementById('ctglrulestring').innerHTML="View all soups for "+buildrulestring+" at Catagolue";
+
 }
 </script>
   </body>
