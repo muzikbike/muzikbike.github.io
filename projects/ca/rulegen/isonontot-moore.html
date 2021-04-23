@@ -4,15 +4,15 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.1</h1>
+	 <h2>v0.0.2</h1>
 	</header>
   </head>
 <body>
   <div class="text">
    <p>This tool generates an isotropic non-totalistic rulestring with the transitions present within corresponding to the boxes which are checked.</p>
-   <p>Note that the generated rulestrings are not always canonical - partial negation is yet to be implemented.</p>
-   <p>All good CA simulators will still correct such rulestrings (although you'll still need to manually remove the newlines).</p>
-   <p>Preferably I'd have this output into a text box (rather than a newline for every single character), and also allow rulestring inputs, but that's for later.</p>
+   <p>Note that the generated rulestrings are not always canonical - alphabetical order and partial negation is yet to be implemented.</p>
+   <p>All good CA simulators will still correct such rulestrings.</p>
+   <p>Preferably I'd also allow rulestring inputs, but that's for later.</p>
    <table>
     <tr>
 	 <th>Transition Name \ Count</th>
@@ -29,8 +29,8 @@
     <tr>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/ae/Neighborhood_0.png alt="0"></img><br>
-	  <label for="box-B0">B</label><input type="checkbox" id="box-B0" onclick="chB0Function()">
-	  <label for="box-S0">S</label><input type="checkbox" id="box-S0" onclick="chS0Function()"></th>
+	  <label for="box-B0">B</label><input type="checkbox" id="box-B0">
+	  <label for="box-S0">S</label><input type="checkbox" id="box-S0"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -39,59 +39,59 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/2c/Neighborhood_8.png alt="8"></img><br>
-	  <label for="box-B8">B</label><input type="checkbox" id="box-B8" onclick="chB8Function()">
-	  <label for="box-S8">S</label><input type="checkbox" id="box-S8" onclick="chS8Function()"></th>
+	  <label for="box-B8">B</label><input type="checkbox" id="box-B8">
+	  <label for="box-S8">S</label><input type="checkbox" id="box-S8"></th>
 	</tr>
     <tr>
 	 <th>c</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0f/Neighborhood_1c.png alt="1c"></img><br>
-	  <label for="box-B1c">B</label><input type="checkbox" id="box-B1c" onclick="chB1Function()">
-	  <label for="box-S1c">S</label><input type="checkbox" id="box-S1c" onclick="chS1Function()"></th>
+	  <label for="box-B1c">B</label><input type="checkbox" id="box-B1c">
+	  <label for="box-S1c">S</label><input type="checkbox" id="box-S1c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/1/16/Neighborhood_2c.png alt="2c"></img><br>
-	  <label for="box-B2c">B</label><input type="checkbox" id="box-B2c" onclick="chB2Function()">
-	  <label for="box-S2c">S</label><input type="checkbox" id="box-S2c" onclick="chS2Function()"></th>
+	  <label for="box-B2c">B</label><input type="checkbox" id="box-B2c">
+	  <label for="box-S2c">S</label><input type="checkbox" id="box-S2c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e2/Neighborhood_3c.png alt="3c"></img><br>
-	  <label for="box-B3c">B</label><input type="checkbox" id="box-B3c" onclick="chB3Function()">
-	  <label for="box-S3c">S</label><input type="checkbox" id="box-S3c" onclick="chS3Function()"></th>
+	  <label for="box-B3c">B</label><input type="checkbox" id="box-B3c">
+	  <label for="box-S3c">S</label><input type="checkbox" id="box-S3c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/fa/Neighborhood_4c.png alt="4c"></img><br>
-	  <label for="box-B4c">B</label><input type="checkbox" id="box-B4c" onclick="chB4Function()">
-	  <label for="box-S4c">S</label><input type="checkbox" id="box-S4c" onclick="chS4Function()"></th>
+	  <label for="box-B4c">B</label><input type="checkbox" id="box-B4c">
+	  <label for="box-S4c">S</label><input type="checkbox" id="box-S4c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/a4/Neighborhood_5c.png alt="5c"></img><br>
-	  <label for="box-B5c">B</label><input type="checkbox" id="box-B5c" onclick="chB5Function()">
-	  <label for="box-S5c">S</label><input type="checkbox" id="box-S5c" onclick="chS5Function()"></th>
+	  <label for="box-B5c">B</label><input type="checkbox" id="box-B5c">
+	  <label for="box-S5c">S</label><input type="checkbox" id="box-S5c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/1/16/Neighborhood_6c.png alt="6c"></img><br>
-	  <label for="box-B6c">B</label><input type="checkbox" id="box-B6c" onclick="chB6Function()">
-	  <label for="box-S6c">S</label><input type="checkbox" id="box-S6c" onclick="chS6Function()"></th>
+	  <label for="box-B6c">B</label><input type="checkbox" id="box-B6c">
+	  <label for="box-S6c">S</label><input type="checkbox" id="box-S6c"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/26/Neighborhood_7c.png alt="7c"></img><br>
-	  <label for="box-B7c">B</label><input type="checkbox" id="box-B7c" onclick="chB7Function()">
-	  <label for="box-S7c">S</label><input type="checkbox" id="box-S7c" onclick="chS7Function()"></th>
+	  <label for="box-B7c">B</label><input type="checkbox" id="box-B7c">
+	  <label for="box-S7c">S</label><input type="checkbox" id="box-S7c"></th>
 	 <th>-</th>
 	</tr>
     <tr>
 	 <th>e</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e8/Neighborhood_1e.png alt="1e"></img><br>
-	  <label for="box-B1e">B</label><input type="checkbox" id="box-B1e" onclick="chB1Function()">
-	  <label for="box-S1e">S</label><input type="checkbox" id="box-S1e" onclick="chS1Function()"></th>
+	  <label for="box-B1e">B</label><input type="checkbox" id="box-B1e">
+	  <label for="box-S1e">S</label><input type="checkbox" id="box-S1e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/88/Neighborhood_2e.png alt="2e"></img><br>
-	  <label for="box-B2e">B</label><input type="checkbox" id="box-B2e" onclick="chB2Function()">
-	  <label for="box-S2e">S</label><input type="checkbox" id="box-S2e" onclick="chS2Function()"></th>
+	  <label for="box-B2e">B</label><input type="checkbox" id="box-B2e">
+	  <label for="box-S2e">S</label><input type="checkbox" id="box-S2e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b9/Neighborhood_3e.png alt="3e"></img><br>
-	  <label for="box-B3e">B</label><input type="checkbox" id="box-B3e" onclick="chB3Function()">
-	  <label for="box-S3e">S</label><input type="checkbox" id="box-S3e" onclick="chS3Function()"></th>
+	  <label for="box-B3e">B</label><input type="checkbox" id="box-B3e">
+	  <label for="box-S3e">S</label><input type="checkbox" id="box-S3e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/27/Neighborhood_4e.png alt="4e"></img><br>
-	  <label for="box-B4e">B</label><input type="checkbox" id="box-B4e" onclick="chB4Function()">
-	  <label for="box-S4e">S</label><input type="checkbox" id="box-S4e" onclick="chS4Function()"></th>
+	  <label for="box-B4e">B</label><input type="checkbox" id="box-B4e">
+	  <label for="box-S4e">S</label><input type="checkbox" id="box-S4e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/be/Neighborhood_5e.png alt="5e"></img><br>
-	  <label for="box-B5e">B</label><input type="checkbox" id="box-B5e" onclick="chB5Function()">
-	  <label for="box-S5e">S</label><input type="checkbox" id="box-S5e" onclick="chS5Function()"></th>
+	  <label for="box-B5e">B</label><input type="checkbox" id="box-B5e">
+	  <label for="box-S5e">S</label><input type="checkbox" id="box-S5e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/bd/Neighborhood_6e.png alt="6e"></img><br>
-	  <label for="box-B6e">B</label><input type="checkbox" id="box-B6e" onclick="chB6Function()">
-	  <label for="box-S6e">S</label><input type="checkbox" id="box-S6e" onclick="chS6Function()"></th>
+	  <label for="box-B6e">B</label><input type="checkbox" id="box-B6e">
+	  <label for="box-S6e">S</label><input type="checkbox" id="box-S6e"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/2b/Neighborhood_7e.png alt="7e"></img><br>
-	  <label for="box-B7e">B</label><input type="checkbox" id="box-B7e" onclick="chB7Function()">
-	  <label for="box-S7e">S</label><input type="checkbox" id="box-S7e" onclick="chS7Function()"></th>
+	  <label for="box-B7e">B</label><input type="checkbox" id="box-B7e">
+	  <label for="box-S7e">S</label><input type="checkbox" id="box-S7e"></th>
 	 <th>-</th>
 	</tr>
     <tr>
@@ -99,20 +99,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/d2/Neighborhood_2k.png alt="2k"></img><br>
-	  <label for="box-B2k">B</label><input type="checkbox" id="box-B2k" onclick="chB2Function()">
-	  <label for="box-S2k">S</label><input type="checkbox" id="box-S2k" onclick="chS2Function()"></th>
+	  <label for="box-B2k">B</label><input type="checkbox" id="box-B2k">
+	  <label for="box-S2k">S</label><input type="checkbox" id="box-S2k"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e7/Neighborhood_3k.png alt="3k"></img><br>
-	  <label for="box-B3k">B</label><input type="checkbox" id="box-B3k" onclick="chB3Function()">
-	  <label for="box-S3k">S</label><input type="checkbox" id="box-S3k" onclick="chS3Function()"></th>
+	  <label for="box-B3k">B</label><input type="checkbox" id="box-B3k">
+	  <label for="box-S3k">S</label><input type="checkbox" id="box-S3k"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/3/32/Neighborhood_4k.png alt="4k"></img><br>
-	  <label for="box-B4k">B</label><input type="checkbox" id="box-B4k" onclick="chB4Function()">
-	  <label for="box-S4k">S</label><input type="checkbox" id="box-S4k" onclick="chS4Function()"></th>
+	  <label for="box-B4k">B</label><input type="checkbox" id="box-B4k">
+	  <label for="box-S4k">S</label><input type="checkbox" id="box-S4k"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/63/Neighborhood_5k.png alt="5k"></img><br>
-	  <label for="box-B5k">B</label><input type="checkbox" id="box-B5k" onclick="chB5Function()">
-	  <label for="box-S5k">S</label><input type="checkbox" id="box-S5k" onclick="chS5Function()"></th>
+	  <label for="box-B5k">B</label><input type="checkbox" id="box-B5k">
+	  <label for="box-S5k">S</label><input type="checkbox" id="box-S5k"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b6/Neighborhood_6k.png alt="6k"></img><br>
-	  <label for="box-B6k">B</label><input type="checkbox" id="box-B6k" onclick="chB6Function()">
-	  <label for="box-S6k">S</label><input type="checkbox" id="box-S6k" onclick="chS6Function()"></th>
+	  <label for="box-B6k">B</label><input type="checkbox" id="box-B6k">
+	  <label for="box-S6k">S</label><input type="checkbox" id="box-S6k"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -121,20 +121,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/54/Neighborhood_2a.png alt="2a"></img><br>
-	  <label for="box-B2a">B</label><input type="checkbox" id="box-B2a" onclick="chB2Function()">
-	  <label for="box-S2a">S</label><input type="checkbox" id="box-S2a" onclick="chS2Function()"></th>
+	  <label for="box-B2a">B</label><input type="checkbox" id="box-B2a">
+	  <label for="box-S2a">S</label><input type="checkbox" id="box-S2a"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/8a/Neighborhood_3a.png alt="3a"></img><br>
-	  <label for="box-B3a">B</label><input type="checkbox" id="box-B3a" onclick="chB3Function()">
-	  <label for="box-S3a">S</label><input type="checkbox" id="box-S3a" onclick="chS3Function()"></th>
+	  <label for="box-B3a">B</label><input type="checkbox" id="box-B3a">
+	  <label for="box-S3a">S</label><input type="checkbox" id="box-S3a"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/f5/Neighborhood_4a.png alt="4a"></img><br>
-	  <label for="box-B4a">B</label><input type="checkbox" id="box-B4a" onclick="chB4Function()">
-	  <label for="box-S4a">S</label><input type="checkbox" id="box-S4a" onclick="chS4Function()"></th>
+	  <label for="box-B4a">B</label><input type="checkbox" id="box-B4a">
+	  <label for="box-S4a">S</label><input type="checkbox" id="box-S4a"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/69/Neighborhood_5a.png alt="5a"></img><br>
-	  <label for="box-B5a">B</label><input type="checkbox" id="box-B5a" onclick="chB5Function()">
-	  <label for="box-S5a">S</label><input type="checkbox" id="box-S5a" onclick="chS5Function()"></th>
+	  <label for="box-B5a">B</label><input type="checkbox" id="box-B5a">
+	  <label for="box-S5a">S</label><input type="checkbox" id="box-S5a"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b8/Neighborhood_6a.png alt="6a"></img><br>
-	  <label for="box-B6a">B</label><input type="checkbox" id="box-B6a" onclick="chB6Function()">
-	  <label for="box-S6a">S</label><input type="checkbox" id="box-S6a" onclick="chS6Function()"></th>
+	  <label for="box-B6a">B</label><input type="checkbox" id="box-B6a">
+	  <label for="box-S6a">S</label><input type="checkbox" id="box-S6a"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -143,20 +143,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/49/Neighborhood_2i.png alt="2i"></img><br>
-	  <label for="box-B2i">B</label><input type="checkbox" id="box-B2i" onclick="chB2Function()">
-	  <label for="box-S2i">S</label><input type="checkbox" id="box-S2i" onclick="chS2Function()"></th>
+	  <label for="box-B2i">B</label><input type="checkbox" id="box-B2i">
+	  <label for="box-S2i">S</label><input type="checkbox" id="box-S2i"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/f/fd/Neighborhood_3i.png alt="3i"></img><br>
-	  <label for="box-B3i">B</label><input type="checkbox" id="box-B3i" onclick="chB3Function()">
-	  <label for="box-S3i">S</label><input type="checkbox" id="box-S3i" onclick="chS3Function()"></th>
+	  <label for="box-B3i">B</label><input type="checkbox" id="box-B3i">
+	  <label for="box-S3i">S</label><input type="checkbox" id="box-S3i"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/ea/Neighborhood_4i.png alt="4i"></img><br>
-	  <label for="box-B4i">B</label><input type="checkbox" id="box-B4i" onclick="chB4Function()">
-	  <label for="box-S4i">S</label><input type="checkbox" id="box-S4i" onclick="chS4Function()"></th>
+	  <label for="box-B4i">B</label><input type="checkbox" id="box-B4i">
+	  <label for="box-S4i">S</label><input type="checkbox" id="box-S4i"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/d6/Neighborhood_5i.png alt="5i"></img><br>
-	  <label for="box-B5i">B</label><input type="checkbox" id="box-B5i" onclick="chB5Function()">
-	  <label for="box-S5i">S</label><input type="checkbox" id="box-S5i" onclick="chS5Function()"></th>
+	  <label for="box-B5i">B</label><input type="checkbox" id="box-B5i">
+	  <label for="box-S5i">S</label><input type="checkbox" id="box-S5i"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/b7/Neighborhood_6i.png alt="6i"></img><br>
-	  <label for="box-B6i">B</label><input type="checkbox" id="box-B6i" onclick="chB6Function()">
-	  <label for="box-S6i">S</label><input type="checkbox" id="box-S6i" onclick="chS6Function()"></th>
+	  <label for="box-B6i">B</label><input type="checkbox" id="box-B6i">
+	  <label for="box-S6i">S</label><input type="checkbox" id="box-S6i"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -165,20 +165,20 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/c/c0/Neighborhood_2n.png alt="2n"></img><br>
-	  <label for="box-B2n">B</label><input type="checkbox" id="box-B2n" onclick="chB2Function()">
-	  <label for="box-S2n">S</label><input type="checkbox" id="box-S2n" onclick="chS2Function()"></th>
+	  <label for="box-B2n">B</label><input type="checkbox" id="box-B2n">
+	  <label for="box-S2n">S</label><input type="checkbox" id="box-S2n"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/62/Neighborhood_3n.png alt="3n"></img><br>
-	  <label for="box-B3n">B</label><input type="checkbox" id="box-B3n" onclick="chB3Function()">
-	  <label for="box-S3n">S</label><input type="checkbox" id="box-S3n" onclick="chS3Function()"></th>
+	  <label for="box-B3n">B</label><input type="checkbox" id="box-B3n">
+	  <label for="box-S3n">S</label><input type="checkbox" id="box-S3n"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/af/Neighborhood_4n.png alt="4n"></img><br>
-	  <label for="box-B4n">B</label><input type="checkbox" id="box-B4n" onclick="chB4Function()">
-	  <label for="box-S4n">S</label><input type="checkbox" id="box-S4n" onclick="chS4Function()"></th>
+	  <label for="box-B4n">B</label><input type="checkbox" id="box-B4n">
+	  <label for="box-S4n">S</label><input type="checkbox" id="box-S4n"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/c/c6/Neighborhood_5n.png alt="5n"></img><br>
-	  <label for="box-B5n">B</label><input type="checkbox" id="box-B5n" onclick="chB5Function()">
-	  <label for="box-S5n">S</label><input type="checkbox" id="box-S5n" onclick="chS5Function()"></th>
+	  <label for="box-B5n">B</label><input type="checkbox" id="box-B5n">
+	  <label for="box-S5n">S</label><input type="checkbox" id="box-S5n"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/d/df/Neighborhood_6n.png alt="6n"></img><br>
-	  <label for="box-B6n">B</label><input type="checkbox" id="box-B6n" onclick="chB6Function()">
-	  <label for="box-S6n">S</label><input type="checkbox" id="box-S6n" onclick="chS6Function()"></th>
+	  <label for="box-B6n">B</label><input type="checkbox" id="box-B6n">
+	  <label for="box-S6n">S</label><input type="checkbox" id="box-S6n"></th>
 	 <th>-</th>
 	 <th>-</th>
 	</tr>
@@ -188,14 +188,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/8/89/Neighborhood_3y.png alt="3y"></img><br>
-	  <label for="box-B3y">B</label><input type="checkbox" id="box-B3y" onclick="chB3Function()">
-	  <label for="box-S3y">S</label><input type="checkbox" id="box-S3y" onclick="chS3Function()"></th>
+	  <label for="box-B3y">B</label><input type="checkbox" id="box-B3y">
+	  <label for="box-S3y">S</label><input type="checkbox" id="box-S3y"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/b/ba/Neighborhood_4y.png alt="4y"></img><br>
-	  <label for="box-B4y">B</label><input type="checkbox" id="box-B4y" onclick="chB4Function()">
-	  <label for="box-S4y">S</label><input type="checkbox" id="box-S4y" onclick="chS4Function()"></th>
+	  <label for="box-B4y">B</label><input type="checkbox" id="box-B4y">
+	  <label for="box-S4y">S</label><input type="checkbox" id="box-S4y"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0f/Neighborhood_5y.png alt="5y"></img><br>
-	  <label for="box-B5y">B</label><input type="checkbox" id="box-B5y" onclick="chB5Function()">
-	  <label for="box-S5y">S</label><input type="checkbox" id="box-S5y" onclick="chS5Function()"></th>
+	  <label for="box-B5y">B</label><input type="checkbox" id="box-B5y">
+	  <label for="box-S5y">S</label><input type="checkbox" id="box-S5y"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -206,14 +206,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/6/66/Neighborhood_3q.png alt="3q"></img><br>
-	  <label for="box-B3q">B</label><input type="checkbox" id="box-B3q" onclick="chB3Function()">
-	  <label for="box-S3q">S</label><input type="checkbox" id="box-S3q" onclick="chS3Function()"></th>
+	  <label for="box-B3q">B</label><input type="checkbox" id="box-B3q">
+	  <label for="box-S3q">S</label><input type="checkbox" id="box-S3q"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/9/9e/Neighborhood_4q.png alt="4q"></img><br>
-	  <label for="box-B4q">B</label><input type="checkbox" id="box-B4q" onclick="chB4Function()">
-	  <label for="box-S4q">S</label><input type="checkbox" id="box-S4q" onclick="chS4Function()"></th>
+	  <label for="box-B4q">B</label><input type="checkbox" id="box-B4q">
+	  <label for="box-S4q">S</label><input type="checkbox" id="box-S4q"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/ea/Neighborhood_5q.png alt="5q"></img><br>
-	  <label for="box-B5q">B</label><input type="checkbox" id="box-B5q" onclick="chB5Function()">
-	  <label for="box-S5q">S</label><input type="checkbox" id="box-S5q" onclick="chS5Function()"></th>
+	  <label for="box-B5q">B</label><input type="checkbox" id="box-B5q">
+	  <label for="box-S5q">S</label><input type="checkbox" id="box-S5q"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -224,14 +224,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/a/ab/Neighborhood_3j.png alt="3j"></img><br>
-	  <label for="box-B3j">B</label><input type="checkbox" id="box-B3j" onclick="chB3Function()">
-	  <label for="box-S3j">S</label><input type="checkbox" id="box-S3j" onclick="chS3Function()"></th>
+	  <label for="box-B3j">B</label><input type="checkbox" id="box-B3j">
+	  <label for="box-S3j">S</label><input type="checkbox" id="box-S3j"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/2/22/Neighborhood_4j.png alt="4j"></img><br>
-	  <label for="box-B4j">B</label><input type="checkbox" id="box-B4j" onclick="chB4Function()">
-	  <label for="box-S4j">S</label><input type="checkbox" id="box-S4j" onclick="chS4Function()"></th>
+	  <label for="box-B4j">B</label><input type="checkbox" id="box-B4j">
+	  <label for="box-S4j">S</label><input type="checkbox" id="box-S4j"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/57/Neighborhood_5j.png alt="5j"></img><br>
-	  <label for="box-B5j">B</label><input type="checkbox" id="box-B5j" onclick="chB5Function()">
-	  <label for="box-S5j">S</label><input type="checkbox" id="box-S5j" onclick="chS5Function()"></th>
+	  <label for="box-B5j">B</label><input type="checkbox" id="box-B5j">
+	  <label for="box-S5j">S</label><input type="checkbox" id="box-S5j"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -242,14 +242,14 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/04/Neighborhood_3r.png alt="3r"></img><br>
-	  <label for="box-B3r">B</label><input type="checkbox" id="box-B3r" onclick="chB3Function()">
-	  <label for="box-S3r">S</label><input type="checkbox" id="box-S3r" onclick="chS3Function()"></th>
+	  <label for="box-B3r">B</label><input type="checkbox" id="box-B3r">
+	  <label for="box-S3r">S</label><input type="checkbox" id="box-S3r"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/5/5b/Neighborhood_4r.png alt="4r"></img><br>
-	  <label for="box-B4r">B</label><input type="checkbox" id="box-B4r" onclick="chB4Function()">
-	  <label for="box-S4r">S</label><input type="checkbox" id="box-S4r" onclick="chS4Function()"></th>
+	  <label for="box-B4r">B</label><input type="checkbox" id="box-B4r">
+	  <label for="box-S4r">S</label><input type="checkbox" id="box-S4r"></th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/47/Neighborhood_5r.png alt="5r"></img><br>
-	  <label for="box-B5r">B</label><input type="checkbox" id="box-B5r" onclick="chB5Function()">
-	  <label for="box-S5r">S</label><input type="checkbox" id="box-S5r" onclick="chS5Function()"></th>
+	  <label for="box-B5r">B</label><input type="checkbox" id="box-B5r">
+	  <label for="box-S5r">S</label><input type="checkbox" id="box-S5r"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -261,8 +261,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/4/4e/Neighborhood_4t.png alt="4t"></img><br>
-	  <label for="box-B4t">B</label><input type="checkbox" id="box-B4t" onclick="chB4Function()">
-	  <label for="box-S4t">S</label><input type="checkbox" id="box-S4t" onclick="chS4Function()"></th>
+	  <label for="box-B4t">B</label><input type="checkbox" id="box-B4t">
+	  <label for="box-S4t">S</label><input type="checkbox" id="box-S4t"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -275,8 +275,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/0/0e/Neighborhood_4w.png alt="4w"></img><br>
-	  <label for="box-B4w">B</label><input type="checkbox" id="box-B4w" onclick="chB4Function()">
-	  <label for="box-S4w">S</label><input type="checkbox" id="box-S4w" onclick="chS4Function()"></th>
+	  <label for="box-B4w">B</label><input type="checkbox" id="box-B4w">
+	  <label for="box-S4w">S</label><input type="checkbox" id="box-S4w"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -289,8 +289,8 @@
 	 <th>-</th>
 	 <th>-</th>
 	 <th><img src=https://www.conwaylife.com/w/images/e/e8/Neighborhood_4z.png alt="4z"></img><br>
-	  <label for="box-B4z">B</label><input type="checkbox" id="box-B4z" onclick="chB4Function()">
-	  <label for="box-S4z">S</label><input type="checkbox" id="box-S4z" onclick="chS4Function()"></th>
+	  <label for="box-B4z">B</label><input type="checkbox" id="box-B4z">
+	  <label for="box-S4z">S</label><input type="checkbox" id="box-S4z"></th>
 	 <th>-</th>
 	 <th>-</th>
 	 <th>-</th>
@@ -299,1099 +299,599 @@
    </table>
   </div><p>Rulestring:</p>
 
-<div>B</div>
-<div id="transition-B0"  style="display:none">0</div>
-<div id="transition-B1"  style="display:none">1</div>
-<div id="transition-B1c" style="display:none">c</div>
-<div id="transition-B1e" style="display:none">e</div>
-<div id="transition-B2"  style="display:none">2</div>
-<div id="transition-B2c" style="display:none">c</div>
-<div id="transition-B2e" style="display:none">e</div>
-<div id="transition-B2k" style="display:none">k</div>
-<div id="transition-B2a" style="display:none">a</div>
-<div id="transition-B2i" style="display:none">i</div>
-<div id="transition-B2n" style="display:none">n</div>
-<div id="transition-B3"  style="display:none">3</div>
-<div id="transition-B3c" style="display:none">c</div>
-<div id="transition-B3e" style="display:none">e</div>
-<div id="transition-B3k" style="display:none">k</div>
-<div id="transition-B3a" style="display:none">a</div>
-<div id="transition-B3i" style="display:none">i</div>
-<div id="transition-B3n" style="display:none">n</div>
-<div id="transition-B3y" style="display:none">y</div>
-<div id="transition-B3q" style="display:none">q</div>
-<div id="transition-B3j" style="display:none">j</div>
-<div id="transition-B3r" style="display:none">r</div>
-<div id="transition-B4"  style="display:none">4</div>
-<div id="transition-B4c" style="display:none">c</div>
-<div id="transition-B4e" style="display:none">e</div>
-<div id="transition-B4k" style="display:none">k</div>
-<div id="transition-B4a" style="display:none">a</div>
-<div id="transition-B4i" style="display:none">i</div>
-<div id="transition-B4n" style="display:none">n</div>
-<div id="transition-B4y" style="display:none">y</div>
-<div id="transition-B4q" style="display:none">q</div>
-<div id="transition-B4j" style="display:none">j</div>
-<div id="transition-B4r" style="display:none">r</div>
-<div id="transition-B4t" style="display:none">t</div>
-<div id="transition-B4w" style="display:none">w</div>
-<div id="transition-B4z" style="display:none">z</div>
-<div id="transition-B5"  style="display:none">5</div>
-<div id="transition-B5c" style="display:none">c</div>
-<div id="transition-B5e" style="display:none">e</div>
-<div id="transition-B5k" style="display:none">k</div>
-<div id="transition-B5a" style="display:none">a</div>
-<div id="transition-B5i" style="display:none">i</div>
-<div id="transition-B5n" style="display:none">n</div>
-<div id="transition-B5y" style="display:none">y</div>
-<div id="transition-B5q" style="display:none">q</div>
-<div id="transition-B5j" style="display:none">j</div>
-<div id="transition-B5r" style="display:none">r</div>
-<div id="transition-B6"  style="display:none">6</div>
-<div id="transition-B6c" style="display:none">c</div>
-<div id="transition-B6e" style="display:none">e</div>
-<div id="transition-B6k" style="display:none">k</div>
-<div id="transition-B6a" style="display:none">a</div>
-<div id="transition-B6i" style="display:none">i</div>
-<div id="transition-B6n" style="display:none">n</div>
-<div id="transition-B7"  style="display:none">7</div>
-<div id="transition-B7c" style="display:none">c</div>
-<div id="transition-B7e" style="display:none">e</div>
-<div id="transition-B8"  style="display:none">8</div>
-<div>/S</div>
-<div id="transition-S0"  style="display:none">0</div>
-<div id="transition-S1"  style="display:none">1</div>
-<div id="transition-S1c" style="display:none">c</div>
-<div id="transition-S1e" style="display:none">e</div>
-<div id="transition-S2"  style="display:none">2</div>
-<div id="transition-S2c" style="display:none">c</div>
-<div id="transition-S2e" style="display:none">e</div>
-<div id="transition-S2k" style="display:none">k</div>
-<div id="transition-S2a" style="display:none">a</div>
-<div id="transition-S2i" style="display:none">i</div>
-<div id="transition-S2n" style="display:none">n</div>
-<div id="transition-S3"  style="display:none">3</div>
-<div id="transition-S3c" style="display:none">c</div>
-<div id="transition-S3e" style="display:none">e</div>
-<div id="transition-S3k" style="display:none">k</div>
-<div id="transition-S3a" style="display:none">a</div>
-<div id="transition-S3i" style="display:none">i</div>
-<div id="transition-S3n" style="display:none">n</div>
-<div id="transition-S3y" style="display:none">y</div>
-<div id="transition-S3q" style="display:none">q</div>
-<div id="transition-S3j" style="display:none">j</div>
-<div id="transition-S3r" style="display:none">r</div>
-<div id="transition-S4"  style="display:none">4</div>
-<div id="transition-S4c" style="display:none">c</div>
-<div id="transition-S4e" style="display:none">e</div>
-<div id="transition-S4k" style="display:none">k</div>
-<div id="transition-S4a" style="display:none">a</div>
-<div id="transition-S4i" style="display:none">i</div>
-<div id="transition-S4n" style="display:none">n</div>
-<div id="transition-S4y" style="display:none">y</div>
-<div id="transition-S4q" style="display:none">q</div>
-<div id="transition-S4j" style="display:none">j</div>
-<div id="transition-S4r" style="display:none">r</div>
-<div id="transition-S4t" style="display:none">t</div>
-<div id="transition-S4w" style="display:none">w</div>
-<div id="transition-S4z" style="display:none">z</div>
-<div id="transition-S5"  style="display:none">5</div>
-<div id="transition-S5c" style="display:none">c</div>
-<div id="transition-S5e" style="display:none">e</div>
-<div id="transition-S5k" style="display:none">k</div>
-<div id="transition-S5a" style="display:none">a</div>
-<div id="transition-S5i" style="display:none">i</div>
-<div id="transition-S5n" style="display:none">n</div>
-<div id="transition-S5y" style="display:none">y</div>
-<div id="transition-S5q" style="display:none">q</div>
-<div id="transition-S5j" style="display:none">j</div>
-<div id="transition-S5r" style="display:none">r</div>
-<div id="transition-S6"  style="display:none">6</div>
-<div id="transition-S6c" style="display:none">c</div>
-<div id="transition-S6e" style="display:none">e</div>
-<div id="transition-S6k" style="display:none">k</div>
-<div id="transition-S6a" style="display:none">a</div>
-<div id="transition-S6i" style="display:none">i</div>
-<div id="transition-S6n" style="display:none">n</div>
-<div id="transition-S7"  style="display:none">7</div>
-<div id="transition-S7c" style="display:none">c</div>
-<div id="transition-S7e" style="display:none">e</div>
-<div id="transition-S8"  style="display:none">8</div>
+<form>
+<input type="button" value="Print rulestring" name="commit" onclick="printRulestring()"> 
+<input type="text" id="rulestring-output" size="20">
+</form>
 
 <script>
-function chB0Function() {
-  var checkBoxB0 = document.getElementById("box-B0");
-  var transitionB0 = document.getElementById("transition-B0");
-  if (checkBoxB0.checked == true){
-    transitionB0.style.display = "block";
-  } else {
-     transitionB0.style.display = "none";
-  }
+function printRulestring(){
+var B0 = document.getElementById('box-B0');
+var B1c = document.getElementById('box-B1c');
+var B1e = document.getElementById('box-B1e');
+var B2c = document.getElementById('box-B2c');
+var B2e = document.getElementById('box-B2e');
+var B2k = document.getElementById('box-B2k');
+var B2a = document.getElementById('box-B2a');
+var B2i = document.getElementById('box-B2i');
+var B2n = document.getElementById('box-B2n');
+var B3c = document.getElementById('box-B3c');
+var B3e = document.getElementById('box-B3e');
+var B3k = document.getElementById('box-B3k');
+var B3a = document.getElementById('box-B3a');
+var B3i = document.getElementById('box-B3i');
+var B3n = document.getElementById('box-B3n');
+var B3y = document.getElementById('box-B3y');
+var B3q = document.getElementById('box-B3q');
+var B3j = document.getElementById('box-B3j');
+var B3r = document.getElementById('box-B3r');
+var B4c = document.getElementById('box-B4c');
+var B4e = document.getElementById('box-B4e');
+var B4k = document.getElementById('box-B4k');
+var B4a = document.getElementById('box-B4a');
+var B4i = document.getElementById('box-B4i');
+var B4n = document.getElementById('box-B4n');
+var B4y = document.getElementById('box-B4y');
+var B4q = document.getElementById('box-B4q');
+var B4j = document.getElementById('box-B4j');
+var B4r = document.getElementById('box-B4r');
+var B4t = document.getElementById('box-B4t');
+var B4w = document.getElementById('box-B4w');
+var B4z = document.getElementById('box-B4z');
+var B5c = document.getElementById('box-B5c');
+var B5e = document.getElementById('box-B5e');
+var B5k = document.getElementById('box-B5k');
+var B5a = document.getElementById('box-B5a');
+var B5i = document.getElementById('box-B5i');
+var B5n = document.getElementById('box-B5n');
+var B5y = document.getElementById('box-B5y');
+var B5q = document.getElementById('box-B5q');
+var B5j = document.getElementById('box-B5j');
+var B5r = document.getElementById('box-B5r');
+var B6c = document.getElementById('box-B6c');
+var B6e = document.getElementById('box-B6e');
+var B6k = document.getElementById('box-B6k');
+var B6a = document.getElementById('box-B6a');
+var B6i = document.getElementById('box-B6i');
+var B6n = document.getElementById('box-B6n');
+var B7c = document.getElementById('box-B7c');
+var B7e = document.getElementById('box-B7e');
+var B8 = document.getElementById('box-B8');
+var S0 = document.getElementById('box-S0');
+var S1c = document.getElementById('box-S1c');
+var S1e = document.getElementById('box-S1e');
+var S2c = document.getElementById('box-S2c');
+var S2e = document.getElementById('box-S2e');
+var S2k = document.getElementById('box-S2k');
+var S2a = document.getElementById('box-S2a');
+var S2i = document.getElementById('box-S2i');
+var S2n = document.getElementById('box-S2n');
+var S3c = document.getElementById('box-S3c');
+var S3e = document.getElementById('box-S3e');
+var S3k = document.getElementById('box-S3k');
+var S3a = document.getElementById('box-S3a');
+var S3i = document.getElementById('box-S3i');
+var S3n = document.getElementById('box-S3n');
+var S3y = document.getElementById('box-S3y');
+var S3q = document.getElementById('box-S3q');
+var S3j = document.getElementById('box-S3j');
+var S3r = document.getElementById('box-S3r');
+var S4c = document.getElementById('box-S4c');
+var S4e = document.getElementById('box-S4e');
+var S4k = document.getElementById('box-S4k');
+var S4a = document.getElementById('box-S4a');
+var S4i = document.getElementById('box-S4i');
+var S4n = document.getElementById('box-S4n');
+var S4y = document.getElementById('box-S4y');
+var S4q = document.getElementById('box-S4q');
+var S4j = document.getElementById('box-S4j');
+var S4r = document.getElementById('box-S4r');
+var S4t = document.getElementById('box-S4t');
+var S4w = document.getElementById('box-S4w');
+var S4z = document.getElementById('box-S4z');
+var S5c = document.getElementById('box-S5c');
+var S5e = document.getElementById('box-S5e');
+var S5k = document.getElementById('box-S5k');
+var S5a = document.getElementById('box-S5a');
+var S5i = document.getElementById('box-S5i');
+var S5n = document.getElementById('box-S5n');
+var S5y = document.getElementById('box-S5y');
+var S5q = document.getElementById('box-S5q');
+var S5j = document.getElementById('box-S5j');
+var S5r = document.getElementById('box-S5r');
+var S6c = document.getElementById('box-S6c');
+var S6e = document.getElementById('box-S6e');
+var S6k = document.getElementById('box-S6k');
+var S6a = document.getElementById('box-S6a');
+var S6i = document.getElementById('box-S6i');
+var S6n = document.getElementById('box-S6n');
+var S7c = document.getElementById('box-S7c');
+var S7e = document.getElementById('box-S7e');
+var S8 = document.getElementById('box-S8');
+
+
+document.getElementById("rulestring-output").value='B';
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B0.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('0');
 }
-function chB1Function() {
-  var checkBoxB1c = document.getElementById("box-B1c");
-  var checkBoxB1e = document.getElementById("box-B1e");
-  var transitionB1 = document.getElementById("transition-B1");
-  var transitionB1c = document.getElementById("transition-B1c");
-  var transitionB1e = document.getElementById("transition-B1e");
-  if (checkBoxB1c.checked == true || checkBoxB1e.checked == true){
-    transitionB1.style.display = "block";
-  } else {
-    transitionB1.style.display = "none";
-  }
-  if (checkBoxB1c.checked == true && checkBoxB1e.checked == true){
-    transitionB1c.style.display = "none";
-    transitionB1e.style.display = "none";
-  } else {
-  if (checkBoxB1c.checked == true){
-    transitionB1c.style.display = "block";
-  } else {
-    transitionB1c.style.display = "none";
-  }
-  if (checkBoxB1e.checked == true){
-    transitionB1e.style.display = "block";
-  } else {
-    transitionB1e.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B1c.checked == true || B1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('1');
 }
-function chB2Function() {
-  var checkBoxB2c = document.getElementById("box-B2c");
-  var checkBoxB2e = document.getElementById("box-B2e");
-  var checkBoxB2k = document.getElementById("box-B2k");
-  var checkBoxB2a = document.getElementById("box-B2a");
-  var checkBoxB2i = document.getElementById("box-B2i");
-  var checkBoxB2n = document.getElementById("box-B2n");
-  var transitionB2 = document.getElementById("transition-B2");
-  var transitionB2c = document.getElementById("transition-B2c");
-  var transitionB2e = document.getElementById("transition-B2e");
-  var transitionB2k = document.getElementById("transition-B2k");
-  var transitionB2a = document.getElementById("transition-B2a");
-  var transitionB2i = document.getElementById("transition-B2i");
-  var transitionB2n = document.getElementById("transition-B2n");
-  if (checkBoxB2c.checked == true || checkBoxB2e.checked == true || checkBoxB2k.checked == true || checkBoxB2a.checked == true || checkBoxB2i.checked == true || checkBoxB2n.checked == true){
-    transitionB2.style.display = "block";
-  } else {
-    transitionB2.style.display = "none";
-  }
-  if (checkBoxB2c.checked == true && checkBoxB2e.checked == true && checkBoxB2k.checked == true && checkBoxB2a.checked == true && checkBoxB2i.checked == true && checkBoxB2n.checked == true){
-    transitionB2c.style.display = "none";
-    transitionB2e.style.display = "none";
-    transitionB2k.style.display = "none";
-    transitionB2a.style.display = "none";
-    transitionB2i.style.display = "none";
-    transitionB2n.style.display = "none";
-  } else {
-  if (checkBoxB2c.checked == true){
-    transitionB2c.style.display = "block";
-  } else {
-    transitionB2c.style.display = "none";
-  }
-  if (checkBoxB2e.checked == true){
-    transitionB2e.style.display = "block";
-  } else {
-    transitionB2e.style.display = "none";
-  }
-  if (checkBoxB2k.checked == true){
-    transitionB2k.style.display = "block";
-  } else {
-    transitionB2k.style.display = "none";
-  }
-  if (checkBoxB2a.checked == true){
-    transitionB2a.style.display = "block";
-  } else {
-    transitionB2a.style.display = "none";
-  }
-  if (checkBoxB2i.checked == true){
-    transitionB2i.style.display = "block";
-  } else {
-    transitionB2i.style.display = "none";
-  }
-  if (checkBoxB2n.checked == true){
-    transitionB2n.style.display = "block";
-  } else {
-    transitionB2n.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+  if (B1c.checked == true && B1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B1c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+} if (B1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
 }
-function chB3Function() {
-  var checkBoxB3c = document.getElementById("box-B3c");
-  var checkBoxB3e = document.getElementById("box-B3e");
-  var checkBoxB3k = document.getElementById("box-B3k");
-  var checkBoxB3a = document.getElementById("box-B3a");
-  var checkBoxB3i = document.getElementById("box-B3i");
-  var checkBoxB3n = document.getElementById("box-B3n");
-  var checkBoxB3y = document.getElementById("box-B3y");
-  var checkBoxB3q = document.getElementById("box-B3q");
-  var checkBoxB3j = document.getElementById("box-B3j");
-  var checkBoxB3r = document.getElementById("box-B3r");
-  var transitionB3 = document.getElementById("transition-B3");
-  var transitionB3c = document.getElementById("transition-B3c");
-  var transitionB3e = document.getElementById("transition-B3e");
-  var transitionB3k = document.getElementById("transition-B3k");
-  var transitionB3a = document.getElementById("transition-B3a");
-  var transitionB3i = document.getElementById("transition-B3i");
-  var transitionB3n = document.getElementById("transition-B3n");
-  var transitionB3y = document.getElementById("transition-B3y");
-  var transitionB3q = document.getElementById("transition-B3q");
-  var transitionB3j = document.getElementById("transition-B3j");
-  var transitionB3r = document.getElementById("transition-B3r");
-  if (checkBoxB3c.checked == true || checkBoxB3e.checked == true || checkBoxB3k.checked == true || checkBoxB3a.checked == true || checkBoxB3i.checked == true || checkBoxB3n.checked == true || checkBoxB3y.checked == true || checkBoxB3q.checked == true || checkBoxB3j.checked == true || checkBoxB3r.checked == true){
-    transitionB3.style.display = "block";
-  } else {
-    transitionB3.style.display = "none";
-  }
-  if (checkBoxB3c.checked == true && checkBoxB3e.checked == true && checkBoxB3k.checked == true && checkBoxB3a.checked == true && checkBoxB3i.checked == true && checkBoxB3n.checked == true && checkBoxB3y.checked == true && checkBoxB3q.checked == true && checkBoxB3j.checked == true && checkBoxB3r.checked == true){
-    transitionB3c.style.display = "none";
-    transitionB3e.style.display = "none";
-    transitionB3k.style.display = "none";
-    transitionB3a.style.display = "none";
-    transitionB3i.style.display = "none";
-    transitionB3n.style.display = "none";
-    transitionB3y.style.display = "none";
-    transitionB3q.style.display = "none";
-    transitionB3j.style.display = "none";
-    transitionB3r.style.display = "none";
-  } else {
-  if (checkBoxB3c.checked == true){
-    transitionB3c.style.display = "block";
-  } else {
-    transitionB3c.style.display = "none";
-  }
-  if (checkBoxB3e.checked == true){
-    transitionB3e.style.display = "block";
-  } else {
-    transitionB3e.style.display = "none";
-  }
-  if (checkBoxB3k.checked == true){
-    transitionB3k.style.display = "block";
-  } else {
-    transitionB3k.style.display = "none";
-  }
-  if (checkBoxB3a.checked == true){
-    transitionB3a.style.display = "block";
-  } else {
-    transitionB3a.style.display = "none";
-  }
-  if (checkBoxB3i.checked == true){
-    transitionB3i.style.display = "block";
-  } else {
-    transitionB3i.style.display = "none";
-  }
-  if (checkBoxB3n.checked == true){
-    transitionB3n.style.display = "block";
-  } else {
-    transitionB3n.style.display = "none";
-  }
-  if (checkBoxB3y.checked == true){
-    transitionB3y.style.display = "block";
-  } else {
-    transitionB3y.style.display = "none";
-  }
-  if (checkBoxB3q.checked == true){
-    transitionB3q.style.display = "block";
-  } else {
-    transitionB3q.style.display = "none";
-  }
-  if (checkBoxB3j.checked == true){
-    transitionB3j.style.display = "block";
-  } else {
-    transitionB3j.style.display = "none";
-  }
-  if (checkBoxB3r.checked == true){
-    transitionB3r.style.display = "block";
-  } else {
-    transitionB3r.style.display = "none";
-  }
- }
 }
-function chB4Function() {
-  var checkBoxB4c = document.getElementById("box-B4c");
-  var checkBoxB4e = document.getElementById("box-B4e");
-  var checkBoxB4k = document.getElementById("box-B4k");
-  var checkBoxB4a = document.getElementById("box-B4a");
-  var checkBoxB4i = document.getElementById("box-B4i");
-  var checkBoxB4n = document.getElementById("box-B4n");
-  var checkBoxB4y = document.getElementById("box-B4y");
-  var checkBoxB4q = document.getElementById("box-B4q");
-  var checkBoxB4j = document.getElementById("box-B4j");
-  var checkBoxB4r = document.getElementById("box-B4r");
-  var checkBoxB4t = document.getElementById("box-B4t");
-  var checkBoxB4w = document.getElementById("box-B4w");
-  var checkBoxB4z = document.getElementById("box-B4z");
-  var transitionB4 = document.getElementById("transition-B4");
-  var transitionB4c = document.getElementById("transition-B4c");
-  var transitionB4e = document.getElementById("transition-B4e");
-  var transitionB4k = document.getElementById("transition-B4k");
-  var transitionB4a = document.getElementById("transition-B4a");
-  var transitionB4i = document.getElementById("transition-B4i");
-  var transitionB4n = document.getElementById("transition-B4n");
-  var transitionB4y = document.getElementById("transition-B4y");
-  var transitionB4q = document.getElementById("transition-B4q");
-  var transitionB4j = document.getElementById("transition-B4j");
-  var transitionB4r = document.getElementById("transition-B4r");
-  var transitionB4t = document.getElementById("transition-B4t");
-  var transitionB4w = document.getElementById("transition-B4w");
-  var transitionB4z = document.getElementById("transition-B4z");
-  if (checkBoxB4c.checked == true || checkBoxB4e.checked == true || checkBoxB4k.checked == true || checkBoxB4a.checked == true || checkBoxB4i.checked == true || checkBoxB4n.checked == true || checkBoxB4y.checked == true || checkBoxB4q.checked == true || checkBoxB4j.checked == true || checkBoxB4r.checked == true || checkBoxB4t.checked == true || checkBoxB4w.checked == true || checkBoxB4z.checked == true){
-    transitionB4.style.display = "block";
-  } else {
-    transitionB4.style.display = "none";
-  }
-  if (checkBoxB4c.checked == true && checkBoxB4e.checked == true && checkBoxB4k.checked == true && checkBoxB4a.checked == true && checkBoxB4i.checked == true && checkBoxB4n.checked == true && checkBoxB4y.checked == true && checkBoxB4q.checked == true && checkBoxB4j.checked == true && checkBoxB4r.checked == true && checkBoxB4t.checked == true && checkBoxB4w.checked == true && checkBoxB4z.checked == true){
-    transitionB4c.style.display = "none";
-    transitionB4e.style.display = "none";
-    transitionB4k.style.display = "none";
-    transitionB4a.style.display = "none";
-    transitionB4i.style.display = "none";
-    transitionB4n.style.display = "none";
-    transitionB4y.style.display = "none";
-    transitionB4q.style.display = "none";
-    transitionB4j.style.display = "none";
-    transitionB4r.style.display = "none";
-    transitionB4t.style.display = "none";
-    transitionB4w.style.display = "none";
-    transitionB4z.style.display = "none";
-  } else {
-  if (checkBoxB4c.checked == true){
-    transitionB4c.style.display = "block";
-  } else {
-    transitionB4c.style.display = "none";
-  }
-  if (checkBoxB4e.checked == true){
-    transitionB4e.style.display = "block";
-  } else {
-    transitionB4e.style.display = "none";
-  }
-  if (checkBoxB4k.checked == true){
-    transitionB4k.style.display = "block";
-  } else {
-    transitionB4k.style.display = "none";
-  }
-  if (checkBoxB4a.checked == true){
-    transitionB4a.style.display = "block";
-  } else {
-    transitionB4a.style.display = "none";
-  }
-  if (checkBoxB4i.checked == true){
-    transitionB4i.style.display = "block";
-  } else {
-    transitionB4i.style.display = "none";
-  }
-  if (checkBoxB4n.checked == true){
-    transitionB4n.style.display = "block";
-  } else {
-    transitionB4n.style.display = "none";
-  }
-  if (checkBoxB4y.checked == true){
-    transitionB4y.style.display = "block";
-  } else {
-    transitionB4y.style.display = "none";
-  }
-  if (checkBoxB4q.checked == true){
-    transitionB4q.style.display = "block";
-  } else {
-    transitionB4q.style.display = "none";
-  }
-  if (checkBoxB4j.checked == true){
-    transitionB4j.style.display = "block";
-  } else {
-    transitionB4j.style.display = "none";
-  }
-  if (checkBoxB4r.checked == true){
-    transitionB4r.style.display = "block";
-  } else {
-    transitionB4r.style.display = "none";
-  }
-  if (checkBoxB4t.checked == true){
-    transitionB4t.style.display = "block";
-  } else {
-    transitionB4t.style.display = "none";
-  }
-  if (checkBoxB4w.checked == true){
-    transitionB4w.style.display = "block";
-  } else {
-    transitionB4w.style.display = "none";
-  }
-  if (checkBoxB4z.checked == true){
-    transitionB4z.style.display = "block";
-  } else {
-    transitionB4z.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B2c.checked == true || B2e.checked == true || B2k.checked == true || B2a.checked == true || B2i.checked == true || B2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('2');
 }
-function chB5Function() {
-  var checkBoxB5c = document.getElementById("box-B5c");
-  var checkBoxB5e = document.getElementById("box-B5e");
-  var checkBoxB5k = document.getElementById("box-B5k");
-  var checkBoxB5a = document.getElementById("box-B5a");
-  var checkBoxB5i = document.getElementById("box-B5i");
-  var checkBoxB5n = document.getElementById("box-B5n");
-  var checkBoxB5y = document.getElementById("box-B5y");
-  var checkBoxB5q = document.getElementById("box-B5q");
-  var checkBoxB5j = document.getElementById("box-B5j");
-  var checkBoxB5r = document.getElementById("box-B5r");
-  var transitionB5 = document.getElementById("transition-B5");
-  var transitionB5c = document.getElementById("transition-B5c");
-  var transitionB5e = document.getElementById("transition-B5e");
-  var transitionB5k = document.getElementById("transition-B5k");
-  var transitionB5a = document.getElementById("transition-B5a");
-  var transitionB5i = document.getElementById("transition-B5i");
-  var transitionB5n = document.getElementById("transition-B5n");
-  var transitionB5y = document.getElementById("transition-B5y");
-  var transitionB5q = document.getElementById("transition-B5q");
-  var transitionB5j = document.getElementById("transition-B5j");
-  var transitionB5r = document.getElementById("transition-B5r");
-  if (checkBoxB5c.checked == true || checkBoxB5e.checked == true || checkBoxB5k.checked == true || checkBoxB5a.checked == true || checkBoxB5i.checked == true || checkBoxB5n.checked == true || checkBoxB5y.checked == true || checkBoxB5q.checked == true || checkBoxB5j.checked == true || checkBoxB5r.checked == true){
-    transitionB5.style.display = "block";
-  } else {
-    transitionB5.style.display = "none";
-  }
-  if (checkBoxB5c.checked == true && checkBoxB5e.checked == true && checkBoxB5k.checked == true && checkBoxB5a.checked == true && checkBoxB5i.checked == true && checkBoxB5n.checked == true && checkBoxB5y.checked == true && checkBoxB5q.checked == true && checkBoxB5j.checked == true && checkBoxB5r.checked == true){
-    transitionB5c.style.display = "none";
-    transitionB5e.style.display = "none";
-    transitionB5k.style.display = "none";
-    transitionB5a.style.display = "none";
-    transitionB5i.style.display = "none";
-    transitionB5n.style.display = "none";
-    transitionB5y.style.display = "none";
-    transitionB5q.style.display = "none";
-    transitionB5j.style.display = "none";
-    transitionB5r.style.display = "none";
-  } else {
-  if (checkBoxB5c.checked == true){
-    transitionB5c.style.display = "block";
-  } else {
-    transitionB5c.style.display = "none";
-  }
-  if (checkBoxB5e.checked == true){
-    transitionB5e.style.display = "block";
-  } else {
-    transitionB5e.style.display = "none";
-  }
-  if (checkBoxB5k.checked == true){
-    transitionB5k.style.display = "block";
-  } else {
-    transitionB5k.style.display = "none";
-  }
-  if (checkBoxB5a.checked == true){
-    transitionB5a.style.display = "block";
-  } else {
-    transitionB5a.style.display = "none";
-  }
-  if (checkBoxB5i.checked == true){
-    transitionB5i.style.display = "block";
-  } else {
-    transitionB5i.style.display = "none";
-  }
-  if (checkBoxB5n.checked == true){
-    transitionB5n.style.display = "block";
-  } else {
-    transitionB5n.style.display = "none";
-  }
-  if (checkBoxB5y.checked == true){
-    transitionB5y.style.display = "block";
-  } else {
-    transitionB5y.style.display = "none";
-  }
-  if (checkBoxB5q.checked == true){
-    transitionB5q.style.display = "block";
-  } else {
-    transitionB5q.style.display = "none";
-  }
-  if (checkBoxB5j.checked == true){
-    transitionB5j.style.display = "block";
-  } else {
-    transitionB5j.style.display = "none";
-  }
-  if (checkBoxB5r.checked == true){
-    transitionB5r.style.display = "block";
-  } else {
-    transitionB5r.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+  if (B2c.checked == true && B2e.checked == true && B2k.checked == true && B2a.checked == true && B2i.checked == true && B2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B2c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (B2e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (B2k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (B2a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (B2i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (B2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
 }
-function chB6Function() {
-  var checkBoxB6c = document.getElementById("box-B6c");
-  var checkBoxB6e = document.getElementById("box-B6e");
-  var checkBoxB6k = document.getElementById("box-B6k");
-  var checkBoxB6a = document.getElementById("box-B6a");
-  var checkBoxB6i = document.getElementById("box-B6i");
-  var checkBoxB6n = document.getElementById("box-B6n");
-  var transitionB6 = document.getElementById("transition-B6");
-  var transitionB6c = document.getElementById("transition-B6c");
-  var transitionB6e = document.getElementById("transition-B6e");
-  var transitionB6k = document.getElementById("transition-B6k");
-  var transitionB6a = document.getElementById("transition-B6a");
-  var transitionB6i = document.getElementById("transition-B6i");
-  var transitionB6n = document.getElementById("transition-B6n");
-  if (checkBoxB6c.checked == true || checkBoxB6e.checked == true || checkBoxB6k.checked == true || checkBoxB6a.checked == true || checkBoxB6i.checked == true || checkBoxB6n.checked == true){
-    transitionB6.style.display = "block";
-  } else {
-    transitionB6.style.display = "none";
-  }
-  if (checkBoxB6c.checked == true && checkBoxB6e.checked == true && checkBoxB6k.checked == true && checkBoxB6a.checked == true && checkBoxB6i.checked == true && checkBoxB6n.checked == true){
-    transitionB6c.style.display = "none";
-    transitionB6e.style.display = "none";
-    transitionB6k.style.display = "none";
-    transitionB6a.style.display = "none";
-    transitionB6i.style.display = "none";
-    transitionB6n.style.display = "none";
-  } else {
-  if (checkBoxB6c.checked == true){
-    transitionB6c.style.display = "block";
-  } else {
-    transitionB6c.style.display = "none";
-  }
-  if (checkBoxB6e.checked == true){
-    transitionB6e.style.display = "block";
-  } else {
-    transitionB6e.style.display = "none";
-  }
-  if (checkBoxB6k.checked == true){
-    transitionB6k.style.display = "block";
-  } else {
-    transitionB6k.style.display = "none";
-  }
-  if (checkBoxB6a.checked == true){
-    transitionB6a.style.display = "block";
-  } else {
-    transitionB6a.style.display = "none";
-  }
-  if (checkBoxB6i.checked == true){
-    transitionB6i.style.display = "block";
-  } else {
-    transitionB6i.style.display = "none";
-  }
-  if (checkBoxB6n.checked == true){
-    transitionB6n.style.display = "block";
-  } else {
-    transitionB6n.style.display = "none";
-  }
- }
 }
-function chB7Function() {
-  var checkBoxB7c = document.getElementById("box-B7c");
-  var checkBoxB7e = document.getElementById("box-B7e");
-  var transitionB7 = document.getElementById("transition-B7");
-  var transitionB7c = document.getElementById("transition-B7c");
-  var transitionB7e = document.getElementById("transition-B7e");
-  if (checkBoxB7c.checked == true || checkBoxB7e.checked == true){
-    transitionB7.style.display = "block";
-  } else {
-    transitionB7.style.display = "none";
-  }
-  if (checkBoxB7c.checked == true && checkBoxB7e.checked == true){
-    transitionB7c.style.display = "none";
-    transitionB7e.style.display = "none";
-  } else {
-  if (checkBoxB7c.checked == true){
-    transitionB7c.style.display = "block";
-  } else {
-    transitionB7c.style.display = "none";
-  }
-  if (checkBoxB7e.checked == true){
-    transitionB7e.style.display = "block";
-  } else {
-    transitionB7e.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B3c.checked == true || B3e.checked == true || B3k.checked == true || B3a.checked == true || B3i.checked == true || B3n.checked == true || B3y.checked == true || B3q.checked == true || B3j.checked == true || B3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('3');
 }
-function chB8Function() {
-  var checkBoxB8 = document.getElementById("box-B8");
-  var transitionB8 = document.getElementById("transition-B8");
-  if (checkBoxB8.checked == true){
-    transitionB8.style.display = "block";
-  } else {
-     transitionB8.style.display = "none";
-  }
+var priortext = document.getElementById("rulestring-output").value
+  if (B3c.checked == true && B3e.checked == true && B3k.checked == true && B3a.checked == true && B3i.checked == true && B3n.checked == true && B3y.checked == true && B3q.checked == true && B3j.checked == true && B3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B3c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (B3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
 }
-function chS0Function() {
-  var checkBoxS0 = document.getElementById("box-S0");
-  var transitionS0 = document.getElementById("transition-S0");
-  if (checkBoxS0.checked == true){
-    transitionS0.style.display = "block";
-  } else {
-     transitionS0.style.display = "none";
-  }
 }
-function chS1Function() {
-  var checkBoxS1c = document.getElementById("box-S1c");
-  var checkBoxS1e = document.getElementById("box-S1e");
-  var transitionS1 = document.getElementById("transition-S1");
-  var transitionS1c = document.getElementById("transition-S1c");
-  var transitionS1e = document.getElementById("transition-S1e");
-  if (checkBoxS1c.checked == true || checkBoxS1e.checked == true){
-    transitionS1.style.display = "block";
-  } else {
-    transitionS1.style.display = "none";
-  }
-  if (checkBoxS1c.checked == true && checkBoxS1e.checked == true){
-    transitionS1c.style.display = "none";
-    transitionS1e.style.display = "none";
-  } else {
-  if (checkBoxS1c.checked == true){
-    transitionS1c.style.display = "block";
-  } else {
-    transitionS1c.style.display = "none";
-  }
-  if (checkBoxS1e.checked == true){
-    transitionS1e.style.display = "block";
-  } else {
-    transitionS1e.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B4c.checked == true || B4e.checked == true || B4k.checked == true || B4a.checked == true || B4i.checked == true || B4n.checked == true || B4y.checked == true || B4q.checked == true || B4j.checked == true || B4r.checked == true || B4t.checked == true || B4w.checked == true || B4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('4');
 }
-function chS2Function() {
-  var checkBoxS2c = document.getElementById("box-S2c");
-  var checkBoxS2e = document.getElementById("box-S2e");
-  var checkBoxS2k = document.getElementById("box-S2k");
-  var checkBoxS2a = document.getElementById("box-S2a");
-  var checkBoxS2i = document.getElementById("box-S2i");
-  var checkBoxS2n = document.getElementById("box-S2n");
-  var transitionS2 = document.getElementById("transition-S2");
-  var transitionS2c = document.getElementById("transition-S2c");
-  var transitionS2e = document.getElementById("transition-S2e");
-  var transitionS2k = document.getElementById("transition-S2k");
-  var transitionS2a = document.getElementById("transition-S2a");
-  var transitionS2i = document.getElementById("transition-S2i");
-  var transitionS2n = document.getElementById("transition-S2n");
-  if (checkBoxS2c.checked == true || checkBoxS2e.checked == true || checkBoxS2k.checked == true || checkBoxS2a.checked == true || checkBoxS2i.checked == true || checkBoxS2n.checked == true){
-    transitionS2.style.display = "block";
-  } else {
-    transitionS2.style.display = "none";
-  }
-  if (checkBoxS2c.checked == true && checkBoxS2e.checked == true && checkBoxS2k.checked == true && checkBoxS2a.checked == true && checkBoxS2i.checked == true && checkBoxS2n.checked == true){
-    transitionS2c.style.display = "none";
-    transitionS2e.style.display = "none";
-    transitionS2k.style.display = "none";
-    transitionS2a.style.display = "none";
-    transitionS2i.style.display = "none";
-    transitionS2n.style.display = "none";
-  } else {
-  if (checkBoxS2c.checked == true){
-    transitionS2c.style.display = "block";
-  } else {
-    transitionS2c.style.display = "none";
-  }
-  if (checkBoxS2e.checked == true){
-    transitionS2e.style.display = "block";
-  } else {
-    transitionS2e.style.display = "none";
-  }
-  if (checkBoxS2k.checked == true){
-    transitionS2k.style.display = "block";
-  } else {
-    transitionS2k.style.display = "none";
-  }
-  if (checkBoxS2a.checked == true){
-    transitionS2a.style.display = "block";
-  } else {
-    transitionS2a.style.display = "none";
-  }
-  if (checkBoxS2i.checked == true){
-    transitionS2i.style.display = "block";
-  } else {
-    transitionS2i.style.display = "none";
-  }
-  if (checkBoxS2n.checked == true){
-    transitionS2n.style.display = "block";
-  } else {
-    transitionS2n.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+  if (B4c.checked == true && B4e.checked == true && B4k.checked == true && B4a.checked == true && B4i.checked == true && B4n.checked == true && B4y.checked == true && B4q.checked == true && B4j.checked == true && B4r.checked == true && B4t.checked == true && B4w.checked == true && B4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B4c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4t.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('t');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4w.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('w');
+var priortext = document.getElementById("rulestring-output").value
+} if (B4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('z');
+var priortext = document.getElementById("rulestring-output").value
 }
-function chS3Function() {
-  var checkBoxS3c = document.getElementById("box-S3c");
-  var checkBoxS3e = document.getElementById("box-S3e");
-  var checkBoxS3k = document.getElementById("box-S3k");
-  var checkBoxS3a = document.getElementById("box-S3a");
-  var checkBoxS3i = document.getElementById("box-S3i");
-  var checkBoxS3n = document.getElementById("box-S3n");
-  var checkBoxS3y = document.getElementById("box-S3y");
-  var checkBoxS3q = document.getElementById("box-S3q");
-  var checkBoxS3j = document.getElementById("box-S3j");
-  var checkBoxS3r = document.getElementById("box-S3r");
-  var transitionS3 = document.getElementById("transition-S3");
-  var transitionS3c = document.getElementById("transition-S3c");
-  var transitionS3e = document.getElementById("transition-S3e");
-  var transitionS3k = document.getElementById("transition-S3k");
-  var transitionS3a = document.getElementById("transition-S3a");
-  var transitionS3i = document.getElementById("transition-S3i");
-  var transitionS3n = document.getElementById("transition-S3n");
-  var transitionS3y = document.getElementById("transition-S3y");
-  var transitionS3q = document.getElementById("transition-S3q");
-  var transitionS3j = document.getElementById("transition-S3j");
-  var transitionS3r = document.getElementById("transition-S3r");
-  if (checkBoxS3c.checked == true || checkBoxS3e.checked == true || checkBoxS3k.checked == true || checkBoxS3a.checked == true || checkBoxS3i.checked == true || checkBoxS3n.checked == true || checkBoxS3y.checked == true || checkBoxS3q.checked == true || checkBoxS3j.checked == true || checkBoxS3r.checked == true){
-    transitionS3.style.display = "block";
-  } else {
-    transitionS3.style.display = "none";
-  }
-  if (checkBoxS3c.checked == true && checkBoxS3e.checked == true && checkBoxS3k.checked == true && checkBoxS3a.checked == true && checkBoxS3i.checked == true && checkBoxS3n.checked == true && checkBoxS3y.checked == true && checkBoxS3q.checked == true && checkBoxS3j.checked == true && checkBoxS3r.checked == true){
-    transitionS3c.style.display = "none";
-    transitionS3e.style.display = "none";
-    transitionS3k.style.display = "none";
-    transitionS3a.style.display = "none";
-    transitionS3i.style.display = "none";
-    transitionS3n.style.display = "none";
-    transitionS3y.style.display = "none";
-    transitionS3q.style.display = "none";
-    transitionS3j.style.display = "none";
-    transitionS3r.style.display = "none";
-  } else {
-  if (checkBoxS3c.checked == true){
-    transitionS3c.style.display = "block";
-  } else {
-    transitionS3c.style.display = "none";
-  }
-  if (checkBoxS3e.checked == true){
-    transitionS3e.style.display = "block";
-  } else {
-    transitionS3e.style.display = "none";
-  }
-  if (checkBoxS3k.checked == true){
-    transitionS3k.style.display = "block";
-  } else {
-    transitionS3k.style.display = "none";
-  }
-  if (checkBoxS3a.checked == true){
-    transitionS3a.style.display = "block";
-  } else {
-    transitionS3a.style.display = "none";
-  }
-  if (checkBoxS3i.checked == true){
-    transitionS3i.style.display = "block";
-  } else {
-    transitionS3i.style.display = "none";
-  }
-  if (checkBoxS3n.checked == true){
-    transitionS3n.style.display = "block";
-  } else {
-    transitionS3n.style.display = "none";
-  }
-  if (checkBoxS3y.checked == true){
-    transitionS3y.style.display = "block";
-  } else {
-    transitionS3y.style.display = "none";
-  }
-  if (checkBoxS3q.checked == true){
-    transitionS3q.style.display = "block";
-  } else {
-    transitionS3q.style.display = "none";
-  }
-  if (checkBoxS3j.checked == true){
-    transitionS3j.style.display = "block";
-  } else {
-    transitionS3j.style.display = "none";
-  }
-  if (checkBoxS3r.checked == true){
-    transitionS3r.style.display = "block";
-  } else {
-    transitionS3r.style.display = "none";
-  }
- }
 }
-function chS4Function() {
-  var checkBoxS4c = document.getElementById("box-S4c");
-  var checkBoxS4e = document.getElementById("box-S4e");
-  var checkBoxS4k = document.getElementById("box-S4k");
-  var checkBoxS4a = document.getElementById("box-S4a");
-  var checkBoxS4i = document.getElementById("box-S4i");
-  var checkBoxS4n = document.getElementById("box-S4n");
-  var checkBoxS4y = document.getElementById("box-S4y");
-  var checkBoxS4q = document.getElementById("box-S4q");
-  var checkBoxS4j = document.getElementById("box-S4j");
-  var checkBoxS4r = document.getElementById("box-S4r");
-  var checkBoxS4t = document.getElementById("box-S4t");
-  var checkBoxS4w = document.getElementById("box-S4w");
-  var checkBoxS4z = document.getElementById("box-S4z");
-  var transitionS4 = document.getElementById("transition-S4");
-  var transitionS4c = document.getElementById("transition-S4c");
-  var transitionS4e = document.getElementById("transition-S4e");
-  var transitionS4k = document.getElementById("transition-S4k");
-  var transitionS4a = document.getElementById("transition-S4a");
-  var transitionS4i = document.getElementById("transition-S4i");
-  var transitionS4n = document.getElementById("transition-S4n");
-  var transitionS4y = document.getElementById("transition-S4y");
-  var transitionS4q = document.getElementById("transition-S4q");
-  var transitionS4j = document.getElementById("transition-S4j");
-  var transitionS4r = document.getElementById("transition-S4r");
-  var transitionS4t = document.getElementById("transition-S4t");
-  var transitionS4w = document.getElementById("transition-S4w");
-  var transitionS4z = document.getElementById("transition-S4z");
-  if (checkBoxS4c.checked == true || checkBoxS4e.checked == true || checkBoxS4k.checked == true || checkBoxS4a.checked == true || checkBoxS4i.checked == true || checkBoxS4n.checked == true || checkBoxS4y.checked == true || checkBoxS4q.checked == true || checkBoxS4j.checked == true || checkBoxS4r.checked == true || checkBoxS4t.checked == true || checkBoxS4w.checked == true || checkBoxS4z.checked == true){
-    transitionS4.style.display = "block";
-  } else {
-    transitionS4.style.display = "none";
-  }
-  if (checkBoxS4c.checked == true && checkBoxS4e.checked == true && checkBoxS4k.checked == true && checkBoxS4a.checked == true && checkBoxS4i.checked == true && checkBoxS4n.checked == true && checkBoxS4y.checked == true && checkBoxS4q.checked == true && checkBoxS4j.checked == true && checkBoxS4r.checked == true && checkBoxS4t.checked == true && checkBoxS4w.checked == true && checkBoxS4z.checked == true){
-    transitionS4c.style.display = "none";
-    transitionS4e.style.display = "none";
-    transitionS4k.style.display = "none";
-    transitionS4a.style.display = "none";
-    transitionS4i.style.display = "none";
-    transitionS4n.style.display = "none";
-    transitionS4y.style.display = "none";
-    transitionS4q.style.display = "none";
-    transitionS4j.style.display = "none";
-    transitionS4r.style.display = "none";
-    transitionS4t.style.display = "none";
-    transitionS4w.style.display = "none";
-    transitionS4z.style.display = "none";
-  } else {
-  if (checkBoxS4c.checked == true){
-    transitionS4c.style.display = "block";
-  } else {
-    transitionS4c.style.display = "none";
-  }
-  if (checkBoxS4e.checked == true){
-    transitionS4e.style.display = "block";
-  } else {
-    transitionS4e.style.display = "none";
-  }
-  if (checkBoxS4k.checked == true){
-    transitionS4k.style.display = "block";
-  } else {
-    transitionS4k.style.display = "none";
-  }
-  if (checkBoxS4a.checked == true){
-    transitionS4a.style.display = "block";
-  } else {
-    transitionS4a.style.display = "none";
-  }
-  if (checkBoxS4i.checked == true){
-    transitionS4i.style.display = "block";
-  } else {
-    transitionS4i.style.display = "none";
-  }
-  if (checkBoxS4n.checked == true){
-    transitionS4n.style.display = "block";
-  } else {
-    transitionS4n.style.display = "none";
-  }
-  if (checkBoxS4y.checked == true){
-    transitionS4y.style.display = "block";
-  } else {
-    transitionS4y.style.display = "none";
-  }
-  if (checkBoxS4q.checked == true){
-    transitionS4q.style.display = "block";
-  } else {
-    transitionS4q.style.display = "none";
-  }
-  if (checkBoxS4j.checked == true){
-    transitionS4j.style.display = "block";
-  } else {
-    transitionS4j.style.display = "none";
-  }
-  if (checkBoxS4r.checked == true){
-    transitionS4r.style.display = "block";
-  } else {
-    transitionS4r.style.display = "none";
-  }
-  if (checkBoxS4t.checked == true){
-    transitionS4t.style.display = "block";
-  } else {
-    transitionS4t.style.display = "none";
-  }
-  if (checkBoxS4w.checked == true){
-    transitionS4w.style.display = "block";
-  } else {
-    transitionS4w.style.display = "none";
-  }
-  if (checkBoxS4z.checked == true){
-    transitionS4z.style.display = "block";
-  } else {
-    transitionS4z.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B5c.checked == true || B5e.checked == true || B5k.checked == true || B5a.checked == true || B5i.checked == true || B5n.checked == true || B5y.checked == true || B5q.checked == true || B5j.checked == true || B5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('5');
 }
-function chS5Function() {
-  var checkBoxS5c = document.getElementById("box-S5c");
-  var checkBoxS5e = document.getElementById("box-S5e");
-  var checkBoxS5k = document.getElementById("box-S5k");
-  var checkBoxS5a = document.getElementById("box-S5a");
-  var checkBoxS5i = document.getElementById("box-S5i");
-  var checkBoxS5n = document.getElementById("box-S5n");
-  var checkBoxS5y = document.getElementById("box-S5y");
-  var checkBoxS5q = document.getElementById("box-S5q");
-  var checkBoxS5j = document.getElementById("box-S5j");
-  var checkBoxS5r = document.getElementById("box-S5r");
-  var transitionS5 = document.getElementById("transition-S5");
-  var transitionS5c = document.getElementById("transition-S5c");
-  var transitionS5e = document.getElementById("transition-S5e");
-  var transitionS5k = document.getElementById("transition-S5k");
-  var transitionS5a = document.getElementById("transition-S5a");
-  var transitionS5i = document.getElementById("transition-S5i");
-  var transitionS5n = document.getElementById("transition-S5n");
-  var transitionS5y = document.getElementById("transition-S5y");
-  var transitionS5q = document.getElementById("transition-S5q");
-  var transitionS5j = document.getElementById("transition-S5j");
-  var transitionS5r = document.getElementById("transition-S5r");
-  if (checkBoxS5c.checked == true || checkBoxS5e.checked == true || checkBoxS5k.checked == true || checkBoxS5a.checked == true || checkBoxS5i.checked == true || checkBoxS5n.checked == true || checkBoxS5y.checked == true || checkBoxS5q.checked == true || checkBoxS5j.checked == true || checkBoxS5r.checked == true){
-    transitionS5.style.display = "block";
-  } else {
-    transitionS5.style.display = "none";
-  }
-  if (checkBoxS5c.checked == true && checkBoxS5e.checked == true && checkBoxS5k.checked == true && checkBoxS5a.checked == true && checkBoxS5i.checked == true && checkBoxS5n.checked == true && checkBoxS5y.checked == true && checkBoxS5q.checked == true && checkBoxS5j.checked == true && checkBoxS5r.checked == true){
-    transitionS5c.style.display = "none";
-    transitionS5e.style.display = "none";
-    transitionS5k.style.display = "none";
-    transitionS5a.style.display = "none";
-    transitionS5i.style.display = "none";
-    transitionS5n.style.display = "none";
-    transitionS5y.style.display = "none";
-    transitionS5q.style.display = "none";
-    transitionS5j.style.display = "none";
-    transitionS5r.style.display = "none";
-  } else {
-  if (checkBoxS5c.checked == true){
-    transitionS5c.style.display = "block";
-  } else {
-    transitionS5c.style.display = "none";
-  }
-  if (checkBoxS5e.checked == true){
-    transitionS5e.style.display = "block";
-  } else {
-    transitionS5e.style.display = "none";
-  }
-  if (checkBoxS5k.checked == true){
-    transitionS5k.style.display = "block";
-  } else {
-    transitionS5k.style.display = "none";
-  }
-  if (checkBoxS5a.checked == true){
-    transitionS5a.style.display = "block";
-  } else {
-    transitionS5a.style.display = "none";
-  }
-  if (checkBoxS5i.checked == true){
-    transitionS5i.style.display = "block";
-  } else {
-    transitionS5i.style.display = "none";
-  }
-  if (checkBoxS5n.checked == true){
-    transitionS5n.style.display = "block";
-  } else {
-    transitionS5n.style.display = "none";
-  }
-  if (checkBoxS5y.checked == true){
-    transitionS5y.style.display = "block";
-  } else {
-    transitionS5y.style.display = "none";
-  }
-  if (checkBoxS5q.checked == true){
-    transitionS5q.style.display = "block";
-  } else {
-    transitionS5q.style.display = "none";
-  }
-  if (checkBoxS5j.checked == true){
-    transitionS5j.style.display = "block";
-  } else {
-    transitionS5j.style.display = "none";
-  }
-  if (checkBoxS5r.checked == true){
-    transitionS5r.style.display = "block";
-  } else {
-    transitionS5r.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+  if (B5c.checked == true && B5e.checked == true && B5k.checked == true && B5a.checked == true && B5i.checked == true && B5n.checked == true && B5y.checked == true && B5q.checked == true && B5j.checked == true && B5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B5c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (B5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
 }
-function chS6Function() {
-  var checkBoxS6c = document.getElementById("box-S6c");
-  var checkBoxS6e = document.getElementById("box-S6e");
-  var checkBoxS6k = document.getElementById("box-S6k");
-  var checkBoxS6a = document.getElementById("box-S6a");
-  var checkBoxS6i = document.getElementById("box-S6i");
-  var checkBoxS6n = document.getElementById("box-S6n");
-  var transitionS6 = document.getElementById("transition-S6");
-  var transitionS6c = document.getElementById("transition-S6c");
-  var transitionS6e = document.getElementById("transition-S6e");
-  var transitionS6k = document.getElementById("transition-S6k");
-  var transitionS6a = document.getElementById("transition-S6a");
-  var transitionS6i = document.getElementById("transition-S6i");
-  var transitionS6n = document.getElementById("transition-S6n");
-  if (checkBoxS6c.checked == true || checkBoxS6e.checked == true || checkBoxS6k.checked == true || checkBoxS6a.checked == true || checkBoxS6i.checked == true || checkBoxS6n.checked == true){
-    transitionS6.style.display = "block";
-  } else {
-    transitionS6.style.display = "none";
-  }
-  if (checkBoxS6c.checked == true && checkBoxS6e.checked == true && checkBoxS6k.checked == true && checkBoxS6a.checked == true && checkBoxS6i.checked == true && checkBoxS6n.checked == true){
-    transitionS6c.style.display = "none";
-    transitionS6e.style.display = "none";
-    transitionS6k.style.display = "none";
-    transitionS6a.style.display = "none";
-    transitionS6i.style.display = "none";
-    transitionS6n.style.display = "none";
-  } else {
-  if (checkBoxS6c.checked == true){
-    transitionS6c.style.display = "block";
-  } else {
-    transitionS6c.style.display = "none";
-  }
-  if (checkBoxS6e.checked == true){
-    transitionS6e.style.display = "block";
-  } else {
-    transitionS6e.style.display = "none";
-  }
-  if (checkBoxS6k.checked == true){
-    transitionS6k.style.display = "block";
-  } else {
-    transitionS6k.style.display = "none";
-  }
-  if (checkBoxS6a.checked == true){
-    transitionS6a.style.display = "block";
-  } else {
-    transitionS6a.style.display = "none";
-  }
-  if (checkBoxS6i.checked == true){
-    transitionS6i.style.display = "block";
-  } else {
-    transitionS6i.style.display = "none";
-  }
-  if (checkBoxS6n.checked == true){
-    transitionS6n.style.display = "block";
-  } else {
-    transitionS6n.style.display = "none";
-  }
- }
 }
-function chS7Function() {
-  var checkBoxS7c = document.getElementById("box-S7c");
-  var checkBoxS7e = document.getElementById("box-S7e");
-  var transitionS7 = document.getElementById("transition-S7");
-  var transitionS7c = document.getElementById("transition-S7c");
-  var transitionS7e = document.getElementById("transition-S7e");
-  if (checkBoxS7c.checked == true || checkBoxS7e.checked == true){
-    transitionS7.style.display = "block";
-  } else {
-    transitionS7.style.display = "none";
-  }
-  if (checkBoxS7c.checked == true && checkBoxS7e.checked == true){
-    transitionS7c.style.display = "none";
-    transitionS7e.style.display = "none";
-  } else {
-  if (checkBoxS7c.checked == true){
-    transitionS7c.style.display = "block";
-  } else {
-    transitionS7c.style.display = "none";
-  }
-  if (checkBoxS7e.checked == true){
-    transitionS7e.style.display = "block";
-  } else {
-    transitionS7e.style.display = "none";
-  }
- }
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B6c.checked == true || B6e.checked == true || B6k.checked == true || B6a.checked == true || B6i.checked == true || B6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('6');
 }
-function chS8Function() {
-  var checkBoxS8 = document.getElementById("box-S8");
-  var transitionS8 = document.getElementById("transition-S8");
-  if (checkBoxS8.checked == true){
-    transitionS8.style.display = "block";
-  } else {
-     transitionS8.style.display = "none";
-  }
+var priortext = document.getElementById("rulestring-output").value
+  if (B6c.checked == true && B6e.checked == true && B6k.checked == true && B6a.checked == true && B6i.checked == true && B6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B6c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (B6e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (B6k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (B6a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (B6i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (B6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B7c.checked == true || B7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('7');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (B7c.checked == true && B7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (B7c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+} if (B7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (B8.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('8');
+}
+var priortext = document.getElementById("rulestring-output").value
+document.getElementById("rulestring-output").value=priortext.concat('/S');
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S0.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('0');
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S1c.checked == true || S1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('1');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S1c.checked == true && S1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S1c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+} if (S1e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S2c.checked == true || S2e.checked == true || S2k.checked == true || S2a.checked == true || S2i.checked == true || S2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('2');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S2c.checked == true && S2e.checked == true && S2k.checked == true && S2a.checked == true && S2i.checked == true && S2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S2c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (S2e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (S2k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (S2a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (S2i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (S2n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S3c.checked == true || S3e.checked == true || S3k.checked == true || S3a.checked == true || S3i.checked == true || S3n.checked == true || S3y.checked == true || S3q.checked == true || S3j.checked == true || S3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('3');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S3c.checked == true && S3e.checked == true && S3k.checked == true && S3a.checked == true && S3i.checked == true && S3n.checked == true && S3y.checked == true && S3q.checked == true && S3j.checked == true && S3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S3c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (S3r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S4c.checked == true || S4e.checked == true || S4k.checked == true || S4a.checked == true || S4i.checked == true || S4n.checked == true || S4y.checked == true || S4q.checked == true || S4j.checked == true || S4r.checked == true || S4t.checked == true || S4w.checked == true || S4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('4');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S4c.checked == true && S4e.checked == true && S4k.checked == true && S4a.checked == true && S4i.checked == true && S4n.checked == true && S4y.checked == true && S4q.checked == true && S4j.checked == true && S4r.checked == true && S4t.checked == true && S4w.checked == true && S4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S4c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4t.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('t');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4w.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('w');
+var priortext = document.getElementById("rulestring-output").value
+} if (S4z.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('z');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S5c.checked == true || S5e.checked == true || S5k.checked == true || S5a.checked == true || S5i.checked == true || S5n.checked == true || S5y.checked == true || S5q.checked == true || S5j.checked == true || S5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('5');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S5c.checked == true && S5e.checked == true && S5k.checked == true && S5a.checked == true && S5i.checked == true && S5n.checked == true && S5y.checked == true && S5q.checked == true && S5j.checked == true && S5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S5c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5y.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('y');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5q.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('q');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5j.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('j');
+var priortext = document.getElementById("rulestring-output").value
+} if (S5r.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('r');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S6c.checked == true || S6e.checked == true || S6k.checked == true || S6a.checked == true || S6i.checked == true || S6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('6');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S6c.checked == true && S6e.checked == true && S6k.checked == true && S6a.checked == true && S6i.checked == true && S6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S6c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+var priortext = document.getElementById("rulestring-output").value
+} if (S6e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+var priortext = document.getElementById("rulestring-output").value
+} if (S6k.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('k');
+var priortext = document.getElementById("rulestring-output").value
+} if (S6a.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('a');
+var priortext = document.getElementById("rulestring-output").value
+} if (S6i.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('i');
+var priortext = document.getElementById("rulestring-output").value
+} if (S6n.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('n');
+var priortext = document.getElementById("rulestring-output").value
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S7c.checked == true || S7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('7');
+}
+var priortext = document.getElementById("rulestring-output").value
+  if (S7c.checked == true && S7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('');
+} else {
+  if (S7c.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('c');
+} if (S7e.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('e');
+}
+}
+var priortext = document.getElementById("rulestring-output").value
+
+
+  if (S8.checked == true){
+document.getElementById("rulestring-output").value=priortext.concat('8');
+}
+var priortext = document.getElementById("rulestring-output").value
 }
 </script>
   </body>
