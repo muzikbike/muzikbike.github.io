@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.7</h1>
+	 <h2>v0.0.8</h1>
 	</header>
   </head>
 <body>
@@ -476,24 +476,16 @@
 			if (s6count > 3){
 			s6exceeds = " (! Exceeds max of 3)"
 			}
-            document.getElementById("b0transitions").innerHTML="B0 transitions: "+b0count;
-            document.getElementById("b1transitions").innerHTML="B1 transitions: "+b1count;
             document.getElementById("b2transitions").innerHTML="B2 transitions: "+b2count+b2exceeds;
             document.getElementById("b3transitions").innerHTML="B3 transitions: "+b3count+b3exceeds;
             document.getElementById("b4transitions").innerHTML="B4 transitions: "+b4count+b4exceeds;
             document.getElementById("b5transitions").innerHTML="B5 transitions: "+b5count+b5exceeds;
             document.getElementById("b6transitions").innerHTML="B6 transitions: "+b6count+b6exceeds;
-            document.getElementById("b7transitions").innerHTML="B7 transitions: "+b7count;
-            document.getElementById("b8transitions").innerHTML="B8 transitions: "+b8count;
-            document.getElementById("s0transitions").innerHTML="S0 transitions: "+s0count;
-            document.getElementById("s1transitions").innerHTML="S1 transitions: "+s1count;
             document.getElementById("s2transitions").innerHTML="S2 transitions: "+s2count+s2exceeds;
             document.getElementById("s3transitions").innerHTML="S3 transitions: "+s3count+s3exceeds;
             document.getElementById("s4transitions").innerHTML="S4 transitions: "+s4count+s4exceeds;
             document.getElementById("s5transitions").innerHTML="S5 transitions: "+s5count+s5exceeds;
             document.getElementById("s6transitions").innerHTML="S6 transitions: "+s6count+s6exceeds;
-            document.getElementById("s7transitions").innerHTML="S7 transitions: "+s7count;
-            document.getElementById("s8transitions").innerHTML="S8 transitions: "+s8count;
         }
 function printRulestring(){
 var B0 = document.getElementById('box-B0');
