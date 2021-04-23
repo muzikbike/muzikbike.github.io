@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.10</h1>
+	 <h2>v0.0.11</h1>
 	</header>
   </head>
 <body>
@@ -302,19 +302,11 @@
 <input type="text" id="rulestring-output" size="20">
 </form>
 
+<h2>Rule Info</h1>
+
 <a href="https://catagolue.hatsya.com/census/" id="ctglrulestring"></a>
 
-<p>Debug info:</p>
-    <div id="b2transitions">B2 transitions: 0 (max 3)</div>
-    <div id="b3transitions">B3 transitions: 0 (max 5)</div>
-    <div id="b4transitions">B4 transitions: 0 (max 6)</div>
-    <div id="b5transitions">B5 transitions: 0 (max 5)</div>
-    <div id="b6transitions">B6 transitions: 0 (max 3)</div>
-    <div id="s2transitions">S2 transitions: 0 (max 3)</div>
-    <div id="s3transitions">S3 transitions: 0 (max 5)</div>
-    <div id="s4transitions">S4 transitions: 0 (max 6)</div>
-    <div id="s5transitions">S5 transitions: 0 (max 5)</div>
-    <div id="s6transitions">S6 transitions: 0 (max 3)</div>
+<div>Coming soon...</div>
 
 <script>
 var b2total = 0;
@@ -428,16 +420,6 @@ var s6total = 0;
 			if (s6count > 3){
 			s6exceeds = " (! Exceeds max of 3)"
 			}
-            document.getElementById("b2transitions").innerHTML="B2 transitions: "+b2count+b2exceeds;
-            document.getElementById("b3transitions").innerHTML="B3 transitions: "+b3count+b3exceeds;
-            document.getElementById("b4transitions").innerHTML="B4 transitions: "+b4count+b4exceeds;
-            document.getElementById("b5transitions").innerHTML="B5 transitions: "+b5count+b5exceeds;
-            document.getElementById("b6transitions").innerHTML="B6 transitions: "+b6count+b6exceeds;
-            document.getElementById("s2transitions").innerHTML="S2 transitions: "+s2count+s2exceeds;
-            document.getElementById("s3transitions").innerHTML="S3 transitions: "+s3count+s3exceeds;
-            document.getElementById("s4transitions").innerHTML="S4 transitions: "+s4count+s4exceeds;
-            document.getElementById("s5transitions").innerHTML="S5 transitions: "+s5count+s5exceeds;
-            document.getElementById("s6transitions").innerHTML="S6 transitions: "+s6count+s6exceeds;
 			b2total = b2count;
 			b3total = b3count;
 			b4total = b4count;
