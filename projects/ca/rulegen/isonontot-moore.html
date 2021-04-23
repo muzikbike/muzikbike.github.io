@@ -4,15 +4,13 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.9</h1>
+	 <h2>v0.0.10</h1>
 	</header>
   </head>
 <body>
   <div class="text">
    <p>This tool generates an isotropic non-totalistic rulestring with the transitions present within corresponding to the boxes which are checked.</p>
-   <p>Note that the generated rulestrings are not always canonical - partial negation is yet to be implemented.</p>
-   <p>All good CA simulators will still correct such rulestrings.</p>
-   <p>Preferably I'd also allow rulestring inputs, but that's for later.</p>
+   <p>Rulestring inputs and rule analysis is planned.</p>
    <table>
     <tr>
 	 <th>Transition Name \ Count</th>
@@ -319,6 +317,16 @@
     <div id="s6transitions">S6 transitions: 0 (max 3)</div>
 
 <script>
+var b2total = 0;
+var b3total = 0;
+var b4total = 0;
+var b5total = 0;
+var b6total = 0;
+var s2total = 0;
+var s3total = 0;
+var s4total = 0;
+var s5total = 0;
+var s6total = 0;
         function counttransitions(){
 		var b2exceeds = " (max 3)";
 		var b3exceeds = " (max 5)";
@@ -330,34 +338,16 @@
 		var s4exceeds = " (max 6)";
 		var s5exceeds = " (max 5)";
 		var s6exceeds = " (max 3)";
-            let b0count=0, b0list=document.getElementsByClassName("B0-boxes");
-            let b1count=0, b1list=document.getElementsByClassName("B1-boxes");
             let b2count=0, b2list=document.getElementsByClassName("B2-boxes");
             let b3count=0, b3list=document.getElementsByClassName("B3-boxes");
             let b4count=0, b4list=document.getElementsByClassName("B4-boxes");
             let b5count=0, b5list=document.getElementsByClassName("B5-boxes");
             let b6count=0, b6list=document.getElementsByClassName("B6-boxes");
-            let b7count=0, b7list=document.getElementsByClassName("B7-boxes");
-            let b8count=0, b8list=document.getElementsByClassName("B8-boxes");
-            let s0count=0, s0list=document.getElementsByClassName("S0-boxes");
-            let s1count=0, s1list=document.getElementsByClassName("S1-boxes");
             let s2count=0, s2list=document.getElementsByClassName("S2-boxes");
             let s3count=0, s3list=document.getElementsByClassName("S3-boxes");
             let s4count=0, s4list=document.getElementsByClassName("S4-boxes");
             let s5count=0, s5list=document.getElementsByClassName("S5-boxes");
             let s6count=0, s6list=document.getElementsByClassName("S6-boxes");
-            let s7count=0, s7list=document.getElementsByClassName("S7-boxes");
-            let s8count=0, s8list=document.getElementsByClassName("S8-boxes");
-            for(n in b0list){
-                if(b0list[n].checked){
-                    b0count++;
-                }
-            }
-            for(n in b1list){
-                if(b1list[n].checked){
-                    b1count++;
-                }
-            }
             for(n in b2list){
                 if(b2list[n].checked){
                     b2count++;
@@ -383,26 +373,6 @@
                     b6count++;
                 }
             }
-            for(n in b7list){
-                if(b7list[n].checked){
-                    b7count++;
-                }
-            }
-            for(n in b8list){
-                if(b8list[n].checked){
-                    b8count++;
-                }
-            }
-            for(n in s0list){
-                if(s0list[n].checked){
-                    s0count++;
-                }
-            }
-            for(n in s1list){
-                if(s1list[n].checked){
-                    s1count++;
-                }
-            }
             for(n in s2list){
                 if(s2list[n].checked){
                     s2count++;
@@ -426,16 +396,6 @@
             for(n in s6list){
                 if(s6list[n].checked){
                     s6count++;
-                }
-            }
-            for(n in s7list){
-                if(s7list[n].checked){
-                    s7count++;
-                }
-            }
-            for(n in s8list){
-                if(s8list[n].checked){
-                    s8count++;
                 }
             }
 			if (b2count > 3){
@@ -478,6 +438,16 @@
             document.getElementById("s4transitions").innerHTML="S4 transitions: "+s4count+s4exceeds;
             document.getElementById("s5transitions").innerHTML="S5 transitions: "+s5count+s5exceeds;
             document.getElementById("s6transitions").innerHTML="S6 transitions: "+s6count+s6exceeds;
+			b2total = b2count;
+			b3total = b3count;
+			b4total = b4count;
+			b5total = b5count;
+			b6total = b6count;
+			s2total = s2count;
+			s3total = s3count;
+			s4total = s4count;
+			s5total = s5count;
+			s6total = s6count;
         }
 function printRulestring(){
 var B0 = document.getElementById('box-B0');
@@ -582,6 +552,66 @@ var S6n = document.getElementById('box-S6n');
 var S7c = document.getElementById('box-S7c');
 var S7e = document.getElementById('box-S7e');
 var S8 = document.getElementById('box-S8');
+            let b2total=0, b2list=document.getElementsByClassName("B2-boxes");
+            let b3total=0, b3list=document.getElementsByClassName("B3-boxes");
+            let b4total=0, b4list=document.getElementsByClassName("B4-boxes");
+            let b5total=0, b5list=document.getElementsByClassName("B5-boxes");
+            let b6total=0, b6list=document.getElementsByClassName("B6-boxes");
+            let s2total=0, s2list=document.getElementsByClassName("S2-boxes");
+            let s3total=0, s3list=document.getElementsByClassName("S3-boxes");
+            let s4total=0, s4list=document.getElementsByClassName("S4-boxes");
+            let s5total=0, s5list=document.getElementsByClassName("S5-boxes");
+            let s6total=0, s6list=document.getElementsByClassName("S6-boxes");
+            for(n in b2list){
+                if(b2list[n].checked){
+                    b2total++;
+                }
+            }
+            for(n in b3list){
+                if(b3list[n].checked){
+                    b3total++;
+                }
+            }
+            for(n in b4list){
+                if(b4list[n].checked){
+                    b4total++;
+                }
+            }
+            for(n in b5list){
+                if(b5list[n].checked){
+                    b5total++;
+                }
+            }
+            for(n in b6list){
+                if(b6list[n].checked){
+                    b6total++;
+                }
+            }
+            for(n in s2list){
+                if(s2list[n].checked){
+                    s2total++;
+                }
+            }
+            for(n in s3list){
+                if(s3list[n].checked){
+                    s3total++;
+                }
+            }
+            for(n in s4list){
+                if(s4list[n].checked){
+                    s4total++;
+                }
+            }
+            for(n in s5list){
+                if(s5list[n].checked){
+                    s5total++;
+                }
+            }
+            for(n in s6list){
+                if(s6list[n].checked){
+                    s6total++;
+                }
+            }
 
 var buildrulestring = 'B';
 
@@ -604,12 +634,13 @@ buildrulestring = buildrulestring.concat('e');
 }
 
 
-  if (B2c.checked == true || B2e.checked == true || B2k.checked == true || B2a.checked == true || B2i.checked == true || B2n.checked == true){
+  if (b2total > 0){
 buildrulestring = buildrulestring.concat('2');
 }
-  if (B2c.checked == true && B2e.checked == true && B2k.checked == true && B2a.checked == true && B2i.checked == true && B2n.checked == true){
+  if (b2total == 6){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (b2total <= 3){
   if (B2a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (B2c.checked == true){
@@ -623,15 +654,32 @@ buildrulestring = buildrulestring.concat('k');
 } if (B2n.checked == true){
 buildrulestring = buildrulestring.concat('n');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (B2a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (B2c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (B2e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (B2i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (B2k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (B2n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+}
+}
 }
 
 
-  if (B3c.checked == true || B3e.checked == true || B3k.checked == true || B3a.checked == true || B3i.checked == true || B3n.checked == true || B3y.checked == true || B3q.checked == true || B3j.checked == true || B3r.checked == true){
+  if (b3total > 0){
 buildrulestring = buildrulestring.concat('3');
 }
-  if (B3c.checked == true && B3e.checked == true && B3k.checked == true && B3a.checked == true && B3i.checked == true && B3n.checked == true && B3y.checked == true && B3q.checked == true && B3j.checked == true && B3r.checked == true){
+  if (b3total == 10){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (b3total <= 5){
   if (B3a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (B3c.checked == true){
@@ -653,15 +701,40 @@ buildrulestring = buildrulestring.concat('r');
 } if (B3y.checked == true){
 buildrulestring = buildrulestring.concat('y');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (B3a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (B3c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (B3e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (B3i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (B3j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (B3k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (B3n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (B3q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (B3r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (B3y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+}
+}
 }
 
 
-  if (B4c.checked == true || B4e.checked == true || B4k.checked == true || B4a.checked == true || B4i.checked == true || B4n.checked == true || B4y.checked == true || B4q.checked == true || B4j.checked == true || B4r.checked == true || B4t.checked == true || B4w.checked == true || B4z.checked == true){
+  if (b4total > 0){
 buildrulestring = buildrulestring.concat('4');
 }
-  if (B4c.checked == true && B4e.checked == true && B4k.checked == true && B4a.checked == true && B4i.checked == true && B4n.checked == true && B4y.checked == true && B4q.checked == true && B4j.checked == true && B4r.checked == true && B4t.checked == true && B4w.checked == true && B4z.checked == true){
+  if (b4total == 13){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (b4total <= 6.5){
   if (B4a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (B4c.checked == true){
@@ -689,15 +762,46 @@ buildrulestring = buildrulestring.concat('y');
 } if (B4z.checked == true){
 buildrulestring = buildrulestring.concat('z');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (B4a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (B4c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (B4e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (B4i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (B4j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (B4k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (B4n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (B4q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (B4r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (B4t.checked == false){
+buildrulestring = buildrulestring.concat('t');
+} if (B4w.checked == false){
+buildrulestring = buildrulestring.concat('w');
+} if (B4y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+} if (B4z.checked == false){
+buildrulestring = buildrulestring.concat('z');
+}
+}
 }
 
 
-  if (B5c.checked == true || B5e.checked == true || B5k.checked == true || B5a.checked == true || B5i.checked == true || B5n.checked == true || B5y.checked == true || B5q.checked == true || B5j.checked == true || B5r.checked == true){
+  if (b5total > 0){
 buildrulestring = buildrulestring.concat('5');
 }
-  if (B5c.checked == true && B5e.checked == true && B5k.checked == true && B5a.checked == true && B5i.checked == true && B5n.checked == true && B5y.checked == true && B5q.checked == true && B5j.checked == true && B5r.checked == true){
+  if (b5total == 10){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (b5total <= 5){
   if (B5a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (B5c.checked == true){
@@ -719,15 +823,40 @@ buildrulestring = buildrulestring.concat('r');
 } if (B5y.checked == true){
 buildrulestring = buildrulestring.concat('y');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (B5a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (B5c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (B5e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (B5i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (B5j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (B5k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (B5n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (B5q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (B5r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (B5y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+}
+}
 }
 
 
-  if (B6c.checked == true || B6e.checked == true || B6k.checked == true || B6a.checked == true || B6i.checked == true || B6n.checked == true){
+  if (b6total > 0){
 buildrulestring = buildrulestring.concat('6');
 }
-  if (B6c.checked == true && B6e.checked == true && B6k.checked == true && B6a.checked == true && B6i.checked == true && B6n.checked == true){
+  if (b6total == 6){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (b6total <= 3){
   if (B6a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (B6c.checked == true){
@@ -740,6 +869,22 @@ buildrulestring = buildrulestring.concat('i');
 buildrulestring = buildrulestring.concat('k');
 } if (B6n.checked == true){
 buildrulestring = buildrulestring.concat('n');
+}
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (B6a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (B6c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (B6e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (B6i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (B6k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (B6n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+}
 }
 }
 
@@ -783,12 +928,13 @@ buildrulestring = buildrulestring.concat('e');
 }
 
 
-  if (S2c.checked == true || S2e.checked == true || S2k.checked == true || S2a.checked == true || S2i.checked == true || S2n.checked == true){
+  if (s2total > 0){
 buildrulestring = buildrulestring.concat('2');
 }
-  if (S2c.checked == true && S2e.checked == true && S2k.checked == true && S2a.checked == true && S2i.checked == true && S2n.checked == true){
+  if (s2total == 6){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (s2total <= 3){
   if (S2a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (S2c.checked == true){
@@ -802,15 +948,32 @@ buildrulestring = buildrulestring.concat('k');
 } if (S2n.checked == true){
 buildrulestring = buildrulestring.concat('n');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (S2a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (S2c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (S2e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (S2i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (S2k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (S2n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+}
+}
 }
 
 
-  if (S3c.checked == true || S3e.checked == true || S3k.checked == true || S3a.checked == true || S3i.checked == true || S3n.checked == true || S3y.checked == true || S3q.checked == true || S3j.checked == true || S3r.checked == true){
+  if (s3total > 0){
 buildrulestring = buildrulestring.concat('3');
 }
-  if (S3c.checked == true && S3e.checked == true && S3k.checked == true && S3a.checked == true && S3i.checked == true && S3n.checked == true && S3y.checked == true && S3q.checked == true && S3j.checked == true && S3r.checked == true){
+  if (s3total == 10){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (s3total <= 5){
   if (S3a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (S3c.checked == true){
@@ -832,15 +995,40 @@ buildrulestring = buildrulestring.concat('r');
 } if (S3y.checked == true){
 buildrulestring = buildrulestring.concat('y');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (S3a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (S3c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (S3e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (S3i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (S3j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (S3k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (S3n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (S3q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (S3r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (S3y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+}
+}
 }
 
 
-  if (S4c.checked == true || S4e.checked == true || S4k.checked == true || S4a.checked == true || S4i.checked == true || S4n.checked == true || S4y.checked == true || S4q.checked == true || S4j.checked == true || S4r.checked == true || S4t.checked == true || S4w.checked == true || S4z.checked == true){
+  if (s4total > 0){
 buildrulestring = buildrulestring.concat('4');
 }
-  if (S4c.checked == true && S4e.checked == true && S4k.checked == true && S4a.checked == true && S4i.checked == true && S4n.checked == true && S4y.checked == true && S4q.checked == true && S4j.checked == true && S4r.checked == true && S4t.checked == true && S4w.checked == true && S4z.checked == true){
+  if (s4total == 13){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (s4total <= 6.5){
   if (S4a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (S4c.checked == true){
@@ -868,15 +1056,46 @@ buildrulestring = buildrulestring.concat('y');
 } if (S4z.checked == true){
 buildrulestring = buildrulestring.concat('z');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (S4a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (S4c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (S4e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (S4i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (S4j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (S4k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (S4n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (S4q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (S4r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (S4t.checked == false){
+buildrulestring = buildrulestring.concat('t');
+} if (S4w.checked == false){
+buildrulestring = buildrulestring.concat('w');
+} if (S4y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+} if (S4z.checked == false){
+buildrulestring = buildrulestring.concat('z');
+}
+}
 }
 
 
-  if (S5c.checked == true || S5e.checked == true || S5k.checked == true || S5a.checked == true || S5i.checked == true || S5n.checked == true || S5y.checked == true || S5q.checked == true || S5j.checked == true || S5r.checked == true){
+  if (s5total > 0){
 buildrulestring = buildrulestring.concat('5');
 }
-  if (S5c.checked == true && S5e.checked == true && S5k.checked == true && S5a.checked == true && S5i.checked == true && S5n.checked == true && S5y.checked == true && S5q.checked == true && S5j.checked == true && S5r.checked == true){
+  if (s5total == 10){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (s5total <= 5){
   if (S5a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (S5c.checked == true){
@@ -898,15 +1117,40 @@ buildrulestring = buildrulestring.concat('r');
 } if (S5y.checked == true){
 buildrulestring = buildrulestring.concat('y');
 }
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (S5a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (S5c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (S5e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (S5i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (S5j.checked == false){
+buildrulestring = buildrulestring.concat('j');
+} if (S5k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (S5n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+} if (S5q.checked == false){
+buildrulestring = buildrulestring.concat('q');
+} if (S5r.checked == false){
+buildrulestring = buildrulestring.concat('r');
+} if (S5y.checked == false){
+buildrulestring = buildrulestring.concat('y');
+}
+}
 }
 
 
-  if (S6c.checked == true || S6e.checked == true || S6k.checked == true || S6a.checked == true || S6i.checked == true || S6n.checked == true){
+  if (s6total > 0){
 buildrulestring = buildrulestring.concat('6');
 }
-  if (S6c.checked == true && S6e.checked == true && S6k.checked == true && S6a.checked == true && S6i.checked == true && S6n.checked == true){
+  if (s6total == 6){
 buildrulestring = buildrulestring.concat('');
 } else {
+  if (s6total <= 3){
   if (S6a.checked == true){
 buildrulestring = buildrulestring.concat('a');
 } if (S6c.checked == true){
@@ -919,6 +1163,22 @@ buildrulestring = buildrulestring.concat('i');
 buildrulestring = buildrulestring.concat('k');
 } if (S6n.checked == true){
 buildrulestring = buildrulestring.concat('n');
+}
+} else {
+buildrulestring = buildrulestring.concat('-');
+  if (S6a.checked == false){
+buildrulestring = buildrulestring.concat('a');
+} if (S6c.checked == false){
+buildrulestring = buildrulestring.concat('c');
+} if (S6e.checked == false){
+buildrulestring = buildrulestring.concat('e');
+} if (S6i.checked == false){
+buildrulestring = buildrulestring.concat('i');
+} if (S6k.checked == false){
+buildrulestring = buildrulestring.concat('k');
+} if (S6n.checked == false){
+buildrulestring = buildrulestring.concat('n');
+}
 }
 }
 
