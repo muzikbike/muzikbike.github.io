@@ -4,13 +4,13 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.14</h1>
+	 <h2>v0.0.15</h1>
 	</header>
   </head>
 <body>
   <div class="text">
    <p>This tool generates an isotropic non-totalistic rulestring with the transitions present within corresponding to the boxes which are checked.</p>
-   <p>Rulestring inputs and rule analysis is planned.</p>
+   <p>The ability to also input existing rulestrings as text is planned.</p>
    <table>
     <tr>
 	 <th>Transition Name \ Count</th>
@@ -302,11 +302,19 @@
 <input type="text" id="rulestring-output" size="20">
 </form>
 
-<h2>Rule Info</h1>
+<h2>Rule Info</h2>
 
 <a href="https://catagolue.hatsya.com/census/" id="ctglrulestring"></a>
 
-<div>Coming soon...</div>
+<h3>Basic rule info</h3>
+
+<div id="boundingboxrestriction"></div>
+
+<h3>Preserved symmetries</h3>
+
+<div id="hasorthogonalgutter"></div>
+
+<div id="hasdiagonalgutter"></div>
 
 <script>
 var b2total = 0;
@@ -1087,6 +1095,27 @@ var ctglify = buildrulestring.replace("B", "b");
 var ctglify = ctglify.replace("/S", "s");
 document.getElementById('ctglrulestring').href="https://catagolue.hatsya.com/census/"+ctglify+"/";
 document.getElementById('ctglrulestring').innerHTML="View all soups for "+buildrulestring+" at Catagolue";
+
+
+
+if (B0.checked == false && B1c.checked == false && B1e.checked == false && B2a.checked == false && B2c.checked == false && B3i.checked == false){
+document.getElementById('boundingboxrestriction').innerHTML="Patterns in this rule cannot escape their initial bounding box.";
+} else {
+document.getElementById('boundingboxrestriction').innerHTML="Patterns in this rule can escape their initial bounding box.";
+}
+
+
+if (B0.checked == false && B2c.checked == false && B2i.checked == false && B4c.checked == false && B4i.checked == false && B6i.checked == false){
+document.getElementById('hasorthogonalgutter').innerHTML="This rule preserves an orthogonal gutter of permanently dead cells.";
+} else {
+document.getElementById('hasorthogonalgutter').innerHTML="";
+}
+
+if (B0.checked == false && B2e.checked == false && B2n.checked == false && B4e.checked == false && B4w.checked == false && B6n.checked == false){
+document.getElementById('hasdiagonalgutter').innerHTML="This rule preserves a diagonal gutter of permanently dead cells.";
+} else {
+document.getElementById('hasdiagonalgutter').innerHTML="";
+}
 
 }
 </script>
