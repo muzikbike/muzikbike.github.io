@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.17</h1>
+	 <h2>v0.0.18</h1>
 	</header>
   </head>
 <body>
@@ -332,6 +332,10 @@
 <div id="hasdiagonalgutter"></div>
 
 <div id="hasdiagonalskewgutter"></div>
+
+<h4>2x2 block pattern preservation</h4>
+
+<div id="hasmargolusfull"></div>
 
 <script>
 var b2total = 0;
@@ -1168,6 +1172,14 @@ if (B0.checked == false && B1c.checked == false && B1e.checked == false && B2a.c
 document.getElementById('hasdiagonalskewgutter').innerHTML="This rule preserves a skewed diagonal gutter of permanently dead cells for diagonal skewed mirror-symmetric patterns.";
 } else {
 document.getElementById('hasdiagonalskewgutter').innerHTML="";
+}
+
+
+
+if (B1c.checked == B2a.checked && B1c.checked == S3a.checked && B3i.checked == S5i.checked && B5a.checked == S6a.checked && B5a.checked == S7c.checked && B4w.checked == S4q.checked){
+document.getElementById('hasmargolusfull').innerHTML="Any pattern in this rule made of 2x2 blocks of matching parity will always be made up of 2x2 blocks, simulating a block cellular automaton on the Margolus neighbourhood.";
+} else {
+document.getElementById('hasmargolusfull').innerHTML="";
 }
 
 }
