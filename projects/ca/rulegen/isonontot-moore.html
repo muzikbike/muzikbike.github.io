@@ -4,7 +4,7 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.18</h1>
+	 <h2>v0.0.19</h1>
 	</header>
   </head>
 <body>
@@ -334,6 +334,8 @@
 <div id="hasdiagonalskewgutter"></div>
 
 <h4>2x2 block pattern preservation</h4>
+
+<div id="hasmargolusone"></div>
 
 <div id="hasmargolusfull"></div>
 
@@ -1176,8 +1178,14 @@ document.getElementById('hasdiagonalskewgutter').innerHTML="";
 
 
 
+if (B0.checked == false && B1e.checked == false && B2i.checked == false && S0.checked == false){
+document.getElementById('hasmargolusone').innerHTML="Any pattern in this rule made of single dots of the correct parity will always be made up of single dots, simulating a block cellular automaton on the Margolus neighbourhood. The six transitions will be explained here soon.";
+} else {
+document.getElementById('hasmargolusone').innerHTML="";
+}
+
 if (B1c.checked == B2a.checked && B1c.checked == S3a.checked && B3i.checked == S5i.checked && B5a.checked == S6a.checked && B5a.checked == S7c.checked && B4w.checked == S4q.checked){
-document.getElementById('hasmargolusfull').innerHTML="Any pattern in this rule made of 2x2 blocks of matching parity will always be made up of 2x2 blocks, simulating a block cellular automaton on the Margolus neighbourhood.";
+document.getElementById('hasmargolusfull').innerHTML="Any pattern in this rule made of 2x2 blocks of matching parity will always be made up of 2x2 blocks, simulating a block cellular automaton on the Margolus neighbourhood. The six transitions will be explained here soon.";
 } else {
 document.getElementById('hasmargolusfull').innerHTML="";
 }
