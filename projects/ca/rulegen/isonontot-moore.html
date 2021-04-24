@@ -4,12 +4,13 @@
     <title>Isotropic Non-Totalistic Rulestring Generator</title>
     <header>
 	 <h1>Isotropic Non-Totalistic Rulestring Generator</h1>
-	 <h2>v0.0.16</h1>
+	 <h2>v0.0.17</h1>
 	</header>
   </head>
 <body>
   <div class="text">
    <p>This tool generates an isotropic non-totalistic rulestring with the transitions present within corresponding to the boxes which are checked.</p>
+   <p>Information regarding the rule and its preserved symmetries will also be calculated and displayed.</p>
    <p>The ability to also input existing rulestrings as text is planned.</p>
    <table>
     <tr>
@@ -312,9 +313,25 @@
 
 <h3>Preserved symmetries</h3>
 
+<h4>0D Gutter symmetries</h4>
+
+<div id="hasdead1center"></div>
+
+<div id="hasdead2center"></div>
+
+<div id="hasdead4center"></div>
+
+<h4>1D Gutter symmetries</h4>
+
 <div id="hasorthogonalgutter"></div>
 
+<div id="hasorthogonalskewgutter"></div>
+
+<div id="hasorthogonalskew2gutter"></div>
+
 <div id="hasdiagonalgutter"></div>
+
+<div id="hasdiagonalskewgutter"></div>
 
 <script>
 var b2total = 0;
@@ -1105,16 +1122,52 @@ document.getElementById('boundingboxrestriction').innerHTML="Patterns in this ru
 }
 
 
+if (B0.checked == false && B4c.checked == false && B4e.checked == false && B8.checked == false){
+document.getElementById('hasdead1center').innerHTML="This rule preserves a central dead cell for odd-odd mirror-symmetric patterns.";
+} else {
+document.getElementById('hasdead1center').innerHTML="";
+}
+
+if (B0.checked == false && B1e.checked == false && B2c.checked == false && B5y.checked == false && B7e.checked == false){
+document.getElementById('hasdead2center').innerHTML="This rule preserves two central dead cells for odd-even mirror-symmetric patterns.";
+} else {
+document.getElementById('hasdead2center').innerHTML="";
+}
+
+if (B0.checked == false && B1c.checked == false && B4w.checked == false && B5a.checked == false){
+document.getElementById('hasdead4center').innerHTML="This rule preserves four central dead cells for even-even mirror-symmetric patterns.";
+} else {
+document.getElementById('hasdead4center').innerHTML="";
+}
+
 if (B0.checked == false && B2c.checked == false && B2i.checked == false && B4c.checked == false && B4i.checked == false && B6i.checked == false){
-document.getElementById('hasorthogonalgutter').innerHTML="This rule preserves an orthogonal gutter of permanently dead cells.";
+document.getElementById('hasorthogonalgutter').innerHTML="This rule preserves an orthogonal gutter of permanently dead cells for odd orthogonal mirror-symmetric patterns.";
 } else {
 document.getElementById('hasorthogonalgutter').innerHTML="";
 }
 
+if (B0.checked == false && B1c.checked == false && B2k.checked == false && B2n.checked == false && B3n.checked == false && B3y.checked == false && B4y.checked == false && B4z.checked == false && B5r.checked == false && B6i.checked == false){
+document.getElementById('hasorthogonalskewgutter').innerHTML="This rule preserves a skewed orthogonal gutter of permanently dead cells for odd orthogonal skewed mirror-symmetric patterns.";
+} else {
+document.getElementById('hasorthogonalskewgutter').innerHTML="";
+}
+
+if (B0.checked == false && B1c.checked == false && B1e.checked == false && B2a.checked == false && B2i.checked == false && B2k.checked == false && B2n.checked == false && B3c.checked == false && B3q.checked == false && B3r.checked == false && B4c.checked == false && B4n.checked == false && B4y.checked == false && B4z.checked == false && B5e.checked == false && B5r.checked == false && B6i.checked == false){
+document.getElementById('hasorthogonalskew2gutter').innerHTML="This rule preserves a doubly-skewed orthogonal gutter of permanently dead cells for odd orthogonal doubly-skewed mirror-symmetric patterns.";
+} else {
+document.getElementById('hasorthogonalskew2gutter').innerHTML="";
+}
+
 if (B0.checked == false && B2e.checked == false && B2n.checked == false && B4e.checked == false && B4w.checked == false && B6n.checked == false){
-document.getElementById('hasdiagonalgutter').innerHTML="This rule preserves a diagonal gutter of permanently dead cells.";
+document.getElementById('hasdiagonalgutter').innerHTML="This rule preserves a diagonal gutter of permanently dead cells for diagonal mirror-symmetric patterns.";
 } else {
 document.getElementById('hasdiagonalgutter').innerHTML="";
+}
+
+if (B0.checked == false && B1c.checked == false && B1e.checked == false && B2a.checked == false && B2k.checked == false && B3k.checked == false && B3q.checked == false && B4q.checked == false){
+document.getElementById('hasdiagonalskewgutter').innerHTML="This rule preserves a skewed diagonal gutter of permanently dead cells for diagonal skewed mirror-symmetric patterns.";
+} else {
+document.getElementById('hasdiagonalskewgutter').innerHTML="";
 }
 
 }
