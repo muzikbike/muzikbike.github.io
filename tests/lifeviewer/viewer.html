@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="LifeViewer" content="viewer textarea 150">
+		<script src="js/lv-plugin.js"></script>
+		<title>LifeViewer Plugin Tests</title>
+	</head>
+	<body>
+		<h1>LifeViewer Plugin</h1>
+		<div class="viewer">
+			<textarea rows="5" cols="79">
+x = 1, y = 48, rule = MAPBJ8g/wSfIP8EnyD/AP8A/w
+o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o$o
+$o$o$o$o$o$o$o$o$o$o$o$o$o!
+[[ AUTOIDENTIFY SHADER Basic WIDTH 750 ]]
+</textarea>
+			<br>
+			<button type="button" id="viewerview">View</button>
+			<button type="button" id="viewerpopup">PopUp</button><br>
+			<br>
+			<canvas width="560" height="560"></canvas>
+		</div>
+		<h3>Clipboard Contents</h3>
+		<textarea id="ViewerCopy" rows="5" cols="79">
+# Anything copied to the clipboard will also appear here.
+</textarea>
+		<br>
+		<p>LifeViewer Plugin by Chris Rowett</p>
+	</body>
+</html>
