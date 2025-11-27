@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#303030">
+<button id="button">Place cursor here, then use button</button>
+<p id="output_area" style="color:#FFFFFF">The used button will be named here.</p>
+<script>
+
+// define variables
+const button = document.querySelector("#button");
+const output_area = document.querySelector("#output_area"); // where we display the result
+
+// detect what mouse button just got released
+// in other contexts, these buttons may have different numeric IDs
+// e.g. left as 1, right as 2, middle as 3, back as 4, forward as 5
+// the IDs used here are those used by MouseEvent.button
+button.addEventListener("mouseup", (e) => {
+  switch (e.button) {
+    case 0:
+      output_area.textContent = `Button ID: ${e.button} (LEFT)`;    // left mouse button
+      output_area.style.color = '#FFFF00'
+      break;
+    case 1:
+      output_area.textContent = `Button ID: ${e.button} (MIDDLE)`;  // middle mouse button
+      output_area.style.color = '#00FFFF'
+      break;
+    case 2:
+      output_area.textContent = `Button ID: ${e.button} (RIGHT)`;   // right mouse button
+      output_area.style.color = '#FF0000'
+      break;
+    case 3:
+      output_area.textContent = `Button ID: ${e.button} (BACK)`;    // side mouse button 1
+      output_area.style.color = '#FF0080'
+      break;
+    case 4:
+      output_area.textContent = `Button ID: ${e.button} (FORWARD)`; // side mouse button 2
+      output_area.style.color = '#FF8000'
+      break;
+    // fallback - if we get exceptional values, something very interesting has happened
+    // MouseEvent.button usually only supports 0, 1, 2, 3 and 4
+    // perhaps a browser would use these values to support even higher buttons than 5?
+    default:
+      output_area.textContent = `Button ID: ${e.button} (how'd you manage that?)`;
+      output_area.style.color = '#FFFFFF'
+  }
+});
+
+// we don't want the right button to display a menu
+// would suppress an output and be functionally inconsistent and distracting. so block it
+button.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
+
+// we don't want buttons 4 or 5 to navigate to other pages
+// would be disruptive and require navigating back to this page. so block it
+button.addEventListener("mouseup", (e) => {
+  e.preventDefault();
+});
+</script>
+</body>
+</html>
