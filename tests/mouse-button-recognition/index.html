@@ -42,17 +42,14 @@ button.addEventListener("mouseup", (e) => {
       output_area.textContent = `Button ID: ${e.button} (how'd you manage that?)`;
       output_area.style.color = '#FFFFFF'
   }
-});
-
-// we don't want the right button to display a menu
-// would suppress an output and be functionally inconsistent and distracting. so block it
-button.addEventListener("contextmenu", (e) => {
+// we don't want buttons 4 or 5 to navigate to other pages
+// would be disruptive and require navigating back to this page. so block it
   e.preventDefault();
 });
 
-// we don't want buttons 4 or 5 to navigate to other pages
-// would be disruptive and require navigating back to this page. so block it
-button.addEventListener("mouseup", (e) => {
+// we also don't want the right button to display a menu
+// would suppress an output and be functionally inconsistent and distracting. so block it
+button.addEventListener("contextmenu", (e) => {
   e.preventDefault();
 });
 </script>
